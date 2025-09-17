@@ -1,0 +1,29 @@
+{
+  "name": "skysouth-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@deck.gl/core": "^9.1.14",
+    "@deck.gl/geo-layers": "^9.1.14",
+    "@deck.gl/layers": "^9.1.14",
+    "deck.gl": "^9.1.14",
+    "maplibre-gl": "^5.7.1",
+    "next": "15.5.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-map-gl": "^8.0.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4"
+  }
+}
