@@ -125,10 +125,10 @@ export default function SkySouthFlightsDemo() {
       {/* Big Title Overlay */}
       <div className="absolute top-24 left-18 z-20">
         <h1 className="text-6xl md:text-7xl font-bold font-sans text-white drop-shadow-lg">
-          12,000 Flights
+          22,000+ Flights
         </h1>
         <h1 className="text-6xl md:text-7xl font-bold font-sans text-white drop-shadow-lg mt-12">
-          22 Years
+          23 Years
         </h1>
       </div>
 
