@@ -4,5 +4,5 @@ Extracted ICAO airport codes from two decades of flight logs and saved latitude 
 Animated flights as 3D arcs on a 3D plane from origin to destination to create an immersive user experience.
 
 # Version 1 Screenshot
-![Map Screenshot 1](https://github.com/jkmock/FlightMap/raw/main/public/screenshots/Screenshot%202025-09-22%20190916.png)
-![Map Screenshot 2](https://github.com/jkmock/FlightMap/raw/main/public/screenshots/Screenshot%202025-09-22%20191006.png)
+![Map Screenshot 1](public/screenshots/Screenshot 2025-09-22 191006.png)
+![Map Screenshot 2](public/screenshots/Screenshot 2025-09-22 191006.png)
