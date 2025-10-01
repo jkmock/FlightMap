@@ -1,0 +1,2049 @@
+{
+  "month": "2022-11",
+  "flights": [
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.21375,
+      "dlng": -80.94906,
+      "meta": {
+        "o": "BUY",
+        "d": "CLT"
+      },
+      "tailNum": "",
+      "date": "2022-11-02 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.21375,
+      "olng": -80.94906,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "CLT",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2022-11-03 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CHS",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-03 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.8946,
+      "dlng": -76.20123,
+      "meta": {
+        "o": "BUY",
+        "d": "ORF"
+      },
+      "tailNum": "",
+      "date": "2022-11-04 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.8946,
+      "olng": -76.20123,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "ORF",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-04 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-04 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.84069,
+      "dlng": -84.88244,
+      "meta": {
+        "o": "BUY",
+        "d": "PIM"
+      },
+      "tailNum": "",
+      "date": "2022-11-05 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 32.84069,
+      "olng": -84.88244,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "PIM",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-05 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 39.10333,
+      "dlng": -84.41861,
+      "meta": {
+        "o": "BUY",
+        "d": "LUK"
+      },
+      "tailNum": "",
+      "date": "2022-11-15 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 39.10333,
+      "olng": -84.41861,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "LUK",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-16 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.03675,
+      "dlng": -84.60864,
+      "meta": {
+        "o": "BUY",
+        "d": "LEX"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 38.03675,
+      "olng": -84.60864,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "LEX",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-18 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 40.08194,
+      "dlng": -75.01058,
+      "meta": {
+        "o": "BUY",
+        "d": "PNE"
+      },
+      "tailNum": "",
+      "date": "2022-11-21 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 40.08194,
+      "olng": -75.01058,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "PNE",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-21 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 43.0,
+      "dlng": -83.7,
+      "meta": {
+        "o": "BUY",
+        "d": "FNT"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 43.0,
+      "olng": -83.7,
+      "dlat": 37.32547,
+      "dlng": -79.97542,
+      "meta": {
+        "o": "FNT",
+        "d": "ROA"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.32547,
+      "olng": -79.97542,
+      "dlat": 33.67974,
+      "dlng": -78.92832,
+      "meta": {
+        "o": "ROA",
+        "d": "MYR"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 33.67974,
+      "olng": -78.92832,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "MYR",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 40.08194,
+      "dlng": -75.01058,
+      "meta": {
+        "o": "BUY",
+        "d": "PNE"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 40.08194,
+      "olng": -75.01058,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "PNE",
+        "d": "INT"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 40.77725,
+      "olng": -73.87261,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "LGA",
+        "d": "RIC"
+      },
+      "tailNum": "",
+      "date": "2022-11-01 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-01 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.81109,
+      "dlng": -83.99407,
+      "meta": {
+        "o": "BUY",
+        "d": "TYS"
+      },
+      "tailNum": "",
+      "date": "2022-11-01 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.81109,
+      "olng": -83.99407,
+      "dlat": 27.97547,
+      "dlng": -82.53325,
+      "meta": {
+        "o": "TYS",
+        "d": "TPA"
+      },
+      "tailNum": "",
+      "date": "2022-11-01 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 27.97547,
+      "olng": -82.53325,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TPA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-02 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "BUY",
+        "d": "RIC"
+      },
+      "tailNum": "",
+      "date": "2022-11-02 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 38.13964,
+      "dlng": -78.45234,
+      "meta": {
+        "o": "RIC",
+        "d": "CHO"
+      },
+      "tailNum": "",
+      "date": "2022-11-02 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.13964,
+      "olng": -78.45234,
+      "dlat": 35.21375,
+      "dlng": -80.94906,
+      "meta": {
+        "o": "CHO",
+        "d": "CLT"
+      },
+      "tailNum": "",
+      "date": "2022-11-02 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.21375,
+      "olng": -80.94906,
+      "dlat": 38.13964,
+      "dlng": -78.45234,
+      "meta": {
+        "o": "CLT",
+        "d": "CHO"
+      },
+      "tailNum": "",
+      "date": "2022-11-03 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.13964,
+      "olng": -78.45234,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "CHO",
+        "d": "RIC"
+      },
+      "tailNum": "",
+      "date": "2022-11-03 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-03 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-03 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 33.8,
+      "dlng": -84.5,
+      "meta": {
+        "o": "RDU",
+        "d": "FTY"
+      },
+      "tailNum": "",
+      "date": "2022-11-04 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 33.8,
+      "olng": -84.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "FTY",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-04 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.51633,
+      "dlng": -84.93886,
+      "meta": {
+        "o": "BUY",
+        "d": "CSG"
+      },
+      "tailNum": "",
+      "date": "2022-11-06 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 32.51633,
+      "olng": -84.93886,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CSG",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-06 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2022-11-09 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 33.94864,
+      "dlng": -83.32591,
+      "meta": {
+        "o": "CHS",
+        "d": "AHN"
+      },
+      "tailNum": "",
+      "date": "2022-11-09 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 33.94864,
+      "olng": -83.32591,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "AHN",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2022-11-10 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CHS",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-10 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 41.47828,
+      "dlng": -73.13518,
+      "meta": {
+        "o": "BUY",
+        "d": "OXC"
+      },
+      "tailNum": "",
+      "date": "2022-11-10 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 41.47828,
+      "olng": -73.13518,
+      "dlat": 41.6081,
+      "dlng": -88.09639,
+      "meta": {
+        "o": "OXC",
+        "d": "LOT"
+      },
+      "tailNum": "",
+      "date": "2022-11-10 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 41.6081,
+      "olng": -88.09639,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "LOT",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-10 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 41.47828,
+      "dlng": -73.13518,
+      "meta": {
+        "o": "IAD",
+        "d": "OXC"
+      },
+      "tailNum": "",
+      "date": "2022-11-11 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 41.47828,
+      "olng": -73.13518,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "OXC",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-11 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "BUY",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2022-11-15 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GSO",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BUY",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 37.78733,
+      "dlng": -81.12417,
+      "meta": {
+        "o": "IAD",
+        "d": "BKW"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.78733,
+      "olng": -81.12417,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BKW",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.78733,
+      "dlng": -81.12417,
+      "meta": {
+        "o": "BUY",
+        "d": "BKW"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.78733,
+      "olng": -81.12417,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BKW",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 41.51786,
+      "dlng": -81.68264,
+      "meta": {
+        "o": "BUY",
+        "d": "BKL"
+      },
+      "tailNum": "",
+      "date": "2022-11-22 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 41.51786,
+      "olng": -81.68264,
+      "dlat": 40.35444,
+      "dlng": -79.92905,
+      "meta": {
+        "o": "BKL",
+        "d": "AGC"
+      },
+      "tailNum": "",
+      "date": "2022-11-22 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 40.35444,
+      "olng": -79.92905,
+      "dlat": 41.51786,
+      "dlng": -81.68264,
+      "meta": {
+        "o": "AGC",
+        "d": "BKL"
+      },
+      "tailNum": "",
+      "date": "2022-11-22 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 41.51786,
+      "olng": -81.68264,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BKL",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-23 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.17408,
+      "dlng": -85.73649,
+      "meta": {
+        "o": "BUY",
+        "d": "SDF"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.17408,
+      "olng": -85.73649,
+      "dlat": 43.11914,
+      "dlng": -77.67187,
+      "meta": {
+        "o": "SDF",
+        "d": "ROC"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 43.11914,
+      "olng": -77.67187,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "ROC",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.43611,
+      "dlng": -82.54205,
+      "meta": {
+        "o": "BUY",
+        "d": "AVL"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.43611,
+      "olng": -82.54205,
+      "dlat": 33.67974,
+      "dlng": -78.92832,
+      "meta": {
+        "o": "AVL",
+        "d": "MYR"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 33.67974,
+      "olng": -78.92832,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "MYR",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "BUY",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2022-11-01 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 30.49405,
+      "dlng": -81.68785,
+      "meta": {
+        "o": "CHS",
+        "d": "JAX"
+      },
+      "tailNum": "",
+      "date": "2022-11-01 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 30.49405,
+      "olng": -81.68785,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "JAX",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2022-11-01 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CHS",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-01 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BUY",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-01 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 41.06695,
+      "dlng": -73.70757,
+      "meta": {
+        "o": "IAD",
+        "d": "HPN"
+      },
+      "tailNum": "",
+      "date": "2022-11-02 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.06695,
+      "olng": -73.70757,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "HPN",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-02 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-02 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 40.85011,
+      "dlng": -74.06083,
+      "meta": {
+        "o": "BUY",
+        "d": "TEB"
+      },
+      "tailNum": "",
+      "date": "2022-11-03 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 40.85011,
+      "olng": -74.06083,
+      "dlat": 43.64564,
+      "dlng": -70.30862,
+      "meta": {
+        "o": "TEB",
+        "d": "PWM"
+      },
+      "tailNum": "",
+      "date": "2022-11-03 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 43.64564,
+      "olng": -70.30862,
+      "dlat": 40.85011,
+      "dlng": -74.06083,
+      "meta": {
+        "o": "PWM",
+        "d": "TEB"
+      },
+      "tailNum": "",
+      "date": "2022-11-03 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 40.85011,
+      "olng": -74.06083,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TEB",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-04 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 27.97547,
+      "dlng": -82.53325,
+      "meta": {
+        "o": "BUY",
+        "d": "TPA"
+      },
+      "tailNum": "",
+      "date": "2022-11-04 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 27.97547,
+      "olng": -82.53325,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TPA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-04 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "BUY",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2022-11-05 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "GSO",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-05 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 39.12294,
+      "dlng": -94.59283,
+      "meta": {
+        "o": "IAD",
+        "d": "MKC"
+      },
+      "tailNum": "",
+      "date": "2022-11-05 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.12294,
+      "olng": -94.59283,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "MKC",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-05 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 27.97547,
+      "dlng": -82.53325,
+      "meta": {
+        "o": "BUY",
+        "d": "TPA"
+      },
+      "tailNum": "",
+      "date": "2022-11-06 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 27.97547,
+      "olng": -82.53325,
+      "dlat": 35.81109,
+      "dlng": -83.99407,
+      "meta": {
+        "o": "TPA",
+        "d": "TYS"
+      },
+      "tailNum": "",
+      "date": "2022-11-06 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.81109,
+      "olng": -83.99407,
+      "dlat": 39.99695,
+      "dlng": -82.89216,
+      "meta": {
+        "o": "TYS",
+        "d": "CMH"
+      },
+      "tailNum": "",
+      "date": "2022-11-06 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.99695,
+      "olng": -82.89216,
+      "dlat": 27.97547,
+      "dlng": -82.53325,
+      "meta": {
+        "o": "CMH",
+        "d": "TPA"
+      },
+      "tailNum": "",
+      "date": "2022-11-06 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 27.97547,
+      "olng": -82.53325,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TPA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-06 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.66211,
+      "dlng": -90.65206,
+      "meta": {
+        "o": "BUY",
+        "d": "SUS"
+      },
+      "tailNum": "",
+      "date": "2022-11-06 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.66211,
+      "olng": -90.65206,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "SUS",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-06 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 41.24167,
+      "dlng": -76.92181,
+      "meta": {
+        "o": "BUY",
+        "d": "IPT"
+      },
+      "tailNum": "",
+      "date": "2022-11-07 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.24167,
+      "olng": -76.92181,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IPT",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-07 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.38777,
+      "dlng": -80.70913,
+      "meta": {
+        "o": "BUY",
+        "d": "JQF"
+      },
+      "tailNum": "",
+      "date": "2022-11-08 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.38777,
+      "olng": -80.70913,
+      "dlat": 27.97547,
+      "dlng": -82.53325,
+      "meta": {
+        "o": "JQF",
+        "d": "TPA"
+      },
+      "tailNum": "",
+      "date": "2022-11-08 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 27.97547,
+      "olng": -82.53325,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TPA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-08 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BUY",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-09 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 41.47828,
+      "dlng": -73.13518,
+      "meta": {
+        "o": "IAD",
+        "d": "OXC"
+      },
+      "tailNum": "",
+      "date": "2022-11-09 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.47828,
+      "olng": -73.13518,
+      "dlat": 42.08308,
+      "dlng": -80.17394,
+      "meta": {
+        "o": "OXC",
+        "d": "ERI"
+      },
+      "tailNum": "",
+      "date": "2022-11-09 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 42.08308,
+      "olng": -80.17394,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "ERI",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-09 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 41.47828,
+      "dlng": -73.13518,
+      "meta": {
+        "o": "IAD",
+        "d": "OXC"
+      },
+      "tailNum": "",
+      "date": "2022-11-09 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.47828,
+      "olng": -73.13518,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "OXC",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-09 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 41.24167,
+      "dlng": -76.92181,
+      "meta": {
+        "o": "BUY",
+        "d": "IPT"
+      },
+      "tailNum": "",
+      "date": "2022-11-10 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.24167,
+      "olng": -76.92181,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IPT",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-10 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 39.17573,
+      "dlng": -76.66899,
+      "meta": {
+        "o": "BUY",
+        "d": "BWI"
+      },
+      "tailNum": "",
+      "date": "2022-11-11 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.17573,
+      "olng": -76.66899,
+      "dlat": 39.90225,
+      "dlng": -84.21941,
+      "meta": {
+        "o": "BWI",
+        "d": "DAY"
+      },
+      "tailNum": "",
+      "date": "2022-11-11 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.90225,
+      "olng": -84.21941,
+      "dlat": 39.17573,
+      "dlng": -76.66899,
+      "meta": {
+        "o": "DAY",
+        "d": "BWI"
+      },
+      "tailNum": "",
+      "date": "2022-11-11 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.17573,
+      "olng": -76.66899,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BWI",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-11 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 40.85011,
+      "dlng": -74.06083,
+      "meta": {
+        "o": "BUY",
+        "d": "TEB"
+      },
+      "tailNum": "",
+      "date": "2022-11-12 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 40.85011,
+      "olng": -74.06083,
+      "dlat": 42.36294,
+      "dlng": -71.00639,
+      "meta": {
+        "o": "TEB",
+        "d": "BOS"
+      },
+      "tailNum": "",
+      "date": "2022-11-12 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 42.36294,
+      "olng": -71.00639,
+      "dlat": 40.85011,
+      "dlng": -74.06083,
+      "meta": {
+        "o": "BOS",
+        "d": "TEB"
+      },
+      "tailNum": "",
+      "date": "2022-11-12 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 40.85011,
+      "olng": -74.06083,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TEB",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-12 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-15 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 33.93884,
+      "dlng": -81.11954,
+      "meta": {
+        "o": "RDU",
+        "d": "CAE"
+      },
+      "tailNum": "",
+      "date": "2022-11-16 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.93884,
+      "olng": -81.11954,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "CAE",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-16 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "RDU",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2022-11-16 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 29.6458,
+      "dlng": -95.27723,
+      "meta": {
+        "o": "GSO",
+        "d": "HOU"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 29.6458,
+      "olng": -95.27723,
+      "dlat": 30.0,
+      "dlng": -94.0,
+      "meta": {
+        "o": "HOU",
+        "d": "BPT"
+      },
+      "tailNum": "",
+      "date": "2022-11-17 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 30.0,
+      "olng": -94.0,
+      "dlat": 33.56389,
+      "dlng": -86.75231,
+      "meta": {
+        "o": "BPT",
+        "d": "BHM"
+      },
+      "tailNum": "",
+      "date": "2022-11-18 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.56389,
+      "olng": -86.75231,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "BHM",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2022-11-18 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GSO",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-18 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 39.87208,
+      "dlng": -75.24066,
+      "meta": {
+        "o": "BUY",
+        "d": "PHL"
+      },
+      "tailNum": "",
+      "date": "2022-11-19 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.87208,
+      "olng": -75.24066,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "PHL",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-19 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-19 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-21 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 41.58682,
+      "dlng": -83.80783,
+      "meta": {
+        "o": "RDU",
+        "d": "TOL"
+      },
+      "tailNum": "",
+      "date": "2022-11-21 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.58682,
+      "olng": -83.80783,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "TOL",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-21 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-22 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 33.876,
+      "dlng": -84.30203,
+      "meta": {
+        "o": "BUY",
+        "d": "PDK"
+      },
+      "tailNum": "",
+      "date": "2022-11-26 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.876,
+      "olng": -84.30203,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "PDK",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-26 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-26 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 33.876,
+      "dlng": -84.30203,
+      "meta": {
+        "o": "BUY",
+        "d": "PDK"
+      },
+      "tailNum": "",
+      "date": "2022-11-27 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.876,
+      "olng": -84.30203,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "PDK",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-27 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-27 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BUY",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-27 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 39.71731,
+      "dlng": -86.29464,
+      "meta": {
+        "o": "IAD",
+        "d": "IND"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.71731,
+      "olng": -86.29464,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "IND",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-28 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 33.876,
+      "dlng": -84.30203,
+      "meta": {
+        "o": "RDU",
+        "d": "PDK"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.876,
+      "olng": -84.30203,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "PDK",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BUY",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-29 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 35.63569,
+      "dlng": -77.38408,
+      "meta": {
+        "o": "IAD",
+        "d": "PGV"
+      },
+      "tailNum": "",
+      "date": "2022-11-30 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.63569,
+      "olng": -77.38408,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "PGV",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2022-11-30 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2022-11-30 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2022-11-30 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 39.14602,
+      "dlng": -86.61668,
+      "meta": {
+        "o": "RDU",
+        "d": "BMG"
+      },
+      "tailNum": "",
+      "date": "2022-11-30 00:00:00",
+      "source_file": "Flight Logs 2022.xlsx",
+      "source_sheet": "90KM CJ3"
+    }
+  ]
+}

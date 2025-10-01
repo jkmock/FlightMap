@@ -1,5 +1,5 @@
 {
-  "month": "m04",
+  "month": "2025-04",
   "flights": [
     {
       "olat": 41.93903,
@@ -11,7 +11,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-01 00:00:00"
+      "date": "2025-04-01 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -23,7 +25,9 @@
         "d": "CLT"
       },
       "tailNum": "30M",
-      "date": "2025-04-01 00:00:00"
+      "date": "2025-04-01 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.21375,
@@ -35,7 +39,9 @@
         "d": "LGA"
       },
       "tailNum": "30M",
-      "date": "2025-04-01 00:00:00"
+      "date": "2025-04-01 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 40.77725,
@@ -47,7 +53,9 @@
         "d": "CLT"
       },
       "tailNum": "30M",
-      "date": "2025-04-01 00:00:00"
+      "date": "2025-04-01 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.21375,
@@ -59,7 +67,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-01 00:00:00"
+      "date": "2025-04-01 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -71,7 +81,9 @@
         "d": "INT"
       },
       "tailNum": "30M",
-      "date": "2025-04-02 00:00:00"
+      "date": "2025-04-02 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.13371,
@@ -83,7 +95,9 @@
         "d": "ILM"
       },
       "tailNum": "30M",
-      "date": "2025-04-02 00:00:00"
+      "date": "2025-04-02 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 34.27114,
@@ -95,7 +109,9 @@
         "d": "INT"
       },
       "tailNum": "30M",
-      "date": "2025-04-03 00:00:00"
+      "date": "2025-04-03 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.13371,
@@ -107,7 +123,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-03 00:00:00"
+      "date": "2025-04-03 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -119,7 +137,9 @@
         "d": "CHS"
       },
       "tailNum": "30M",
-      "date": "2025-04-04 00:00:00"
+      "date": "2025-04-04 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 32.89864,
@@ -131,7 +151,9 @@
         "d": "FSM"
       },
       "tailNum": "30M",
-      "date": "2025-04-04 00:00:00"
+      "date": "2025-04-04 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.3,
@@ -143,7 +165,9 @@
         "d": "OKC"
       },
       "tailNum": "30M",
-      "date": "2025-04-04 00:00:00"
+      "date": "2025-04-04 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.39307,
@@ -155,7 +179,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-04 00:00:00"
+      "date": "2025-04-04 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -167,7 +193,9 @@
         "d": "TUP"
       },
       "tailNum": "30M",
-      "date": "2025-04-05 00:00:00"
+      "date": "2025-04-05 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 34.269,
@@ -179,7 +207,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-05 00:00:00"
+      "date": "2025-04-05 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -191,7 +221,9 @@
         "d": "TEB"
       },
       "tailNum": "30M",
-      "date": "2025-04-05 00:00:00"
+      "date": "2025-04-05 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 40.85011,
@@ -203,7 +235,9 @@
         "d": "ALB"
       },
       "tailNum": "30M",
-      "date": "2025-04-05 00:00:00"
+      "date": "2025-04-05 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 42.74912,
@@ -215,7 +249,9 @@
         "d": "TEB"
       },
       "tailNum": "30M",
-      "date": "2025-04-05 00:00:00"
+      "date": "2025-04-05 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 40.85011,
@@ -227,7 +263,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-05 00:00:00"
+      "date": "2025-04-05 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -239,7 +277,9 @@
         "d": "HPN"
       },
       "tailNum": "30M",
-      "date": "2025-04-05 00:00:00"
+      "date": "2025-04-05 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 41.06695,
@@ -251,7 +291,9 @@
         "d": "JST"
       },
       "tailNum": "30M",
-      "date": "2025-04-06 00:00:00"
+      "date": "2025-04-06 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 40.31556,
@@ -263,7 +305,9 @@
         "d": "HPN"
       },
       "tailNum": "30M",
-      "date": "2025-04-06 00:00:00"
+      "date": "2025-04-06 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 41.06695,
@@ -275,7 +319,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-06 00:00:00"
+      "date": "2025-04-06 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -287,7 +333,9 @@
         "d": "SHV"
       },
       "tailNum": "30M",
-      "date": "2025-04-08 00:00:00"
+      "date": "2025-04-08 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 32.44652,
@@ -299,7 +347,9 @@
         "d": "CLT"
       },
       "tailNum": "30M",
-      "date": "2025-04-08 00:00:00"
+      "date": "2025-04-08 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.21375,
@@ -311,7 +361,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-08 00:00:00"
+      "date": "2025-04-08 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -323,7 +375,9 @@
         "d": "PDK"
       },
       "tailNum": "30M",
-      "date": "2025-04-08 00:00:00"
+      "date": "2025-04-08 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 33.876,
@@ -335,7 +389,9 @@
         "d": "TRI"
       },
       "tailNum": "30M",
-      "date": "2025-04-08 00:00:00"
+      "date": "2025-04-08 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.47521,
@@ -347,7 +403,9 @@
         "d": "LEX"
       },
       "tailNum": "30M",
-      "date": "2025-04-09 00:00:00"
+      "date": "2025-04-09 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 38.03675,
@@ -359,7 +417,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-09 00:00:00"
+      "date": "2025-04-09 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -371,7 +431,9 @@
         "d": "OPF"
       },
       "tailNum": "30M",
-      "date": "2025-04-09 00:00:00"
+      "date": "2025-04-09 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 25.9,
@@ -383,7 +445,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-09 00:00:00"
+      "date": "2025-04-09 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -395,7 +459,9 @@
         "d": "OPF"
       },
       "tailNum": "30M",
-      "date": "2025-04-10 00:00:00"
+      "date": "2025-04-10 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 25.9,
@@ -407,7 +473,9 @@
         "d": "FLL"
       },
       "tailNum": "30M",
-      "date": "2025-04-11 00:00:00"
+      "date": "2025-04-11 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 26.07167,
@@ -419,7 +487,9 @@
         "d": "TEB"
       },
       "tailNum": "30M",
-      "date": "2025-04-11 00:00:00"
+      "date": "2025-04-11 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 40.85011,
@@ -431,7 +501,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-11 00:00:00"
+      "date": "2025-04-11 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -443,7 +515,9 @@
         "d": "SRQ"
       },
       "tailNum": "30M",
-      "date": "2025-04-13 00:00:00"
+      "date": "2025-04-13 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 27.39544,
@@ -455,7 +529,9 @@
         "d": "CLT"
       },
       "tailNum": "30M",
-      "date": "2025-04-13 00:00:00"
+      "date": "2025-04-13 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.21375,
@@ -467,7 +543,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-14 00:00:00"
+      "date": "2025-04-14 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -479,7 +557,9 @@
         "d": "CLT"
       },
       "tailNum": "30M",
-      "date": "2025-04-14 00:00:00"
+      "date": "2025-04-14 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.21375,
@@ -491,7 +571,9 @@
         "d": "RIC"
       },
       "tailNum": "30M",
-      "date": "2025-04-14 00:00:00"
+      "date": "2025-04-14 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 37.50518,
@@ -503,7 +585,9 @@
         "d": "CLT"
       },
       "tailNum": "30M",
-      "date": "2025-04-14 00:00:00"
+      "date": "2025-04-14 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.21375,
@@ -515,7 +599,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-14 00:00:00"
+      "date": "2025-04-14 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -527,7 +613,9 @@
         "d": "TPA"
       },
       "tailNum": "30M",
-      "date": "2025-04-15 00:00:00"
+      "date": "2025-04-15 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 27.97547,
@@ -539,7 +627,9 @@
         "d": "ORF"
       },
       "tailNum": "30M",
-      "date": "2025-04-15 00:00:00"
+      "date": "2025-04-15 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.8946,
@@ -551,7 +641,9 @@
         "d": "RIC"
       },
       "tailNum": "30M",
-      "date": "2025-04-15 00:00:00"
+      "date": "2025-04-15 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 37.50518,
@@ -563,7 +655,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-15 00:00:00"
+      "date": "2025-04-15 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -575,7 +669,9 @@
         "d": "CHO"
       },
       "tailNum": "30M",
-      "date": "2025-04-16 00:00:00"
+      "date": "2025-04-16 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 38.13964,
@@ -587,7 +683,9 @@
         "d": "RDU"
       },
       "tailNum": "30M",
-      "date": "2025-04-16 00:00:00"
+      "date": "2025-04-16 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.87764,
@@ -599,7 +697,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-16 00:00:00"
+      "date": "2025-04-16 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -611,7 +711,9 @@
         "d": "EQY"
       },
       "tailNum": "30M",
-      "date": "2025-04-18 00:00:00"
+      "date": "2025-04-18 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.0,
@@ -623,7 +725,9 @@
         "d": "HXD"
       },
       "tailNum": "30M",
-      "date": "2025-04-18 00:00:00"
+      "date": "2025-04-18 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 32.22449,
@@ -635,7 +739,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-18 00:00:00"
+      "date": "2025-04-18 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -647,7 +753,9 @@
         "d": "MQY"
       },
       "tailNum": "30M",
-      "date": "2025-04-19 00:00:00"
+      "date": "2025-04-19 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.00897,
@@ -659,7 +767,9 @@
         "d": "RDU"
       },
       "tailNum": "30M",
-      "date": "2025-04-20 00:00:00"
+      "date": "2025-04-20 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.87764,
@@ -671,7 +781,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-20 00:00:00"
+      "date": "2025-04-20 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -683,7 +795,9 @@
         "d": "TEB"
       },
       "tailNum": "30M",
-      "date": "2025-04-20 00:00:00"
+      "date": "2025-04-20 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 40.85011,
@@ -695,7 +809,9 @@
         "d": "GAD"
       },
       "tailNum": "30M",
-      "date": "2025-04-20 00:00:00"
+      "date": "2025-04-20 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 33.97265,
@@ -707,7 +823,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-20 00:00:00"
+      "date": "2025-04-20 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 27.97547,
@@ -719,7 +837,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-21 00:00:00"
+      "date": "2025-04-21 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -731,7 +851,9 @@
         "d": "PBI"
       },
       "tailNum": "30M",
-      "date": "2025-04-23 00:00:00"
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 26.68316,
@@ -743,7 +865,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-23 00:00:00"
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -755,7 +879,9 @@
         "d": "IAD"
       },
       "tailNum": "30M",
-      "date": "2025-04-23 00:00:00"
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 38.9,
@@ -767,7 +893,9 @@
         "d": "ACY"
       },
       "tailNum": "30M",
-      "date": "2025-04-23 00:00:00"
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 39.45758,
@@ -779,7 +907,9 @@
         "d": "IAD"
       },
       "tailNum": "30M",
-      "date": "2025-04-24 00:00:00"
+      "date": "2025-04-24 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 38.9,
@@ -791,7 +921,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-24 00:00:00"
+      "date": "2025-04-24 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -803,7 +935,9 @@
         "d": "GWW"
       },
       "tailNum": "30M",
-      "date": "2025-04-25 00:00:00"
+      "date": "2025-04-25 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.5,
@@ -815,7 +949,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-25 00:00:00"
+      "date": "2025-04-25 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -827,7 +963,9 @@
         "d": "IAD"
       },
       "tailNum": "30M",
-      "date": "2025-04-26 00:00:00"
+      "date": "2025-04-26 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 38.9,
@@ -839,7 +977,9 @@
         "d": "RIC"
       },
       "tailNum": "30M",
-      "date": "2025-04-26 00:00:00"
+      "date": "2025-04-26 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 37.50518,
@@ -851,7 +991,9 @@
         "d": "IAD"
       },
       "tailNum": "30M",
-      "date": "2025-04-26 00:00:00"
+      "date": "2025-04-26 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 38.9,
@@ -863,7 +1005,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-26 00:00:00"
+      "date": "2025-04-26 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -875,7 +1019,9 @@
         "d": "THV"
       },
       "tailNum": "30M",
-      "date": "2025-04-27 00:00:00"
+      "date": "2025-04-27 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 39.917,
@@ -887,7 +1033,9 @@
         "d": "RDU"
       },
       "tailNum": "30M",
-      "date": "2025-04-27 00:00:00"
+      "date": "2025-04-27 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.87764,
@@ -899,7 +1047,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-27 00:00:00"
+      "date": "2025-04-27 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -911,7 +1061,9 @@
         "d": "TYS"
       },
       "tailNum": "30M",
-      "date": "2025-04-29 00:00:00"
+      "date": "2025-04-29 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.81109,
@@ -923,7 +1075,9 @@
         "d": "AVL"
       },
       "tailNum": "30M",
-      "date": "2025-04-29 00:00:00"
+      "date": "2025-04-29 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.43611,
@@ -935,7 +1089,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-29 00:00:00"
+      "date": "2025-04-29 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -947,7 +1103,9 @@
         "d": "MQS"
       },
       "tailNum": "30M",
-      "date": "2025-04-29 00:00:00"
+      "date": "2025-04-29 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 39.97897,
@@ -959,7 +1117,9 @@
         "d": "BUY"
       },
       "tailNum": "30M",
-      "date": "2025-04-29 00:00:00"
+      "date": "2025-04-29 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 36.04973,
@@ -971,7 +1131,9 @@
         "d": "CLT"
       },
       "tailNum": "30M",
-      "date": "2025-04-30 00:00:00"
+      "date": "2025-04-30 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
     },
     {
       "olat": 35.21375,
@@ -983,7 +1145,191 @@
         "d": "HPN"
       },
       "tailNum": "30M",
-      "date": "2025-04-30 00:00:00"
+      "date": "2025-04-30 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GSO",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2025-04-20 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BUY",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2025-04-21 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BUY",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2025-04-21 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 39.71731,
+      "dlng": -86.29464,
+      "meta": {
+        "o": "IAD",
+        "d": "IND"
+      },
+      "tailNum": "",
+      "date": "2025-04-21 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.71731,
+      "olng": -86.29464,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "IND",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2025-04-21 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2025-04-22 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 33.56389,
+      "dlng": -86.75231,
+      "meta": {
+        "o": "BUY",
+        "d": "BHM"
+      },
+      "tailNum": "",
+      "date": "2025-04-22 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.56389,
+      "olng": -86.75231,
+      "dlat": 33.876,
+      "dlng": -84.30203,
+      "meta": {
+        "o": "BHM",
+        "d": "PDK"
+      },
+      "tailNum": "",
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.876,
+      "olng": -84.30203,
+      "dlat": 33.56389,
+      "dlng": -86.75231,
+      "meta": {
+        "o": "PDK",
+        "d": "BHM"
+      },
+      "tailNum": "",
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.56389,
+      "olng": -86.75231,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BHM",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.7,
+      "dlng": -80.0,
+      "meta": {
+        "o": "BUY",
+        "d": "JZI"
+      },
+      "tailNum": "",
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.7,
+      "olng": -80.0,
+      "dlat": 39.90881,
+      "dlng": -105.11719,
+      "meta": {
+        "o": "JZI",
+        "d": "BJC"
+      },
+      "tailNum": "",
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.90881,
+      "olng": -105.11719,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BJC",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2025-04-23 00:00:00",
+      "source_file": "Flight Logs 2025.xlsx",
+      "source_sheet": "90KM CJ3"
     }
   ]
 }
