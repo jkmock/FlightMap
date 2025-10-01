@@ -1,0 +1,2651 @@
+{
+  "month": "2021-04",
+  "flights": [
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-01 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-01 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 32.22449,
+      "dlng": -80.6974,
+      "meta": {
+        "o": "RDU",
+        "d": "HXD"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-01 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 32.22449,
+      "olng": -80.6974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "HXD",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-01 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "BUY",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-01 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "INT",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-02 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-04 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "FXE",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-04 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-04 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-05 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-05 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-05 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-06 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-07 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-07 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-07 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-08 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "BUY",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-09 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "INT",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-09 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-10 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-10 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-10 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-10 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-11 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-11 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-11 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-11 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-12 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-12 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-12 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "RIC",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-13 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "INT",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-13 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-13 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-13 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "RIC",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-14 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "INT",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-17 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-17 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-17 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-17 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-17 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-18 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-18 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 29.17991,
+      "dlng": -81.05804,
+      "meta": {
+        "o": "ORL",
+        "d": "DAB"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-18 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 29.17991,
+      "olng": -81.05804,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "DAB",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-18 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-19 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.84592,
+      "dlng": -80.22233,
+      "meta": {
+        "o": "BUY",
+        "d": "F45"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-19 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.84592,
+      "olng": -80.22233,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "F45",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-19 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-19 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-19 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "RIC",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-20 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "INT",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-20 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-20 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-20 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "RIC",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-20 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "INT",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-21 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-21 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-21 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-21 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-21 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-27 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-27 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-27 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-27 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-27 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-28 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-28 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-28 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-29 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "BUY",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-29 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "INT",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-29 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-29 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "FXE",
+        "d": "ORL"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-29 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "ORL",
+        "d": "RIC"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-29 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-30 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "BUY",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-30 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "INT",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2021-04-30 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-01 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-01 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-01 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "APA",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2021-04-02 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "GSO",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-02 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-02 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-03 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 34.18536,
+      "dlng": -79.72389,
+      "meta": {
+        "o": "BUY",
+        "d": "FLO"
+      },
+      "tailNum": "",
+      "date": "2021-04-03 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 34.18536,
+      "olng": -79.72389,
+      "dlat": 41.51786,
+      "dlng": -81.68264,
+      "meta": {
+        "o": "FLO",
+        "d": "BKL"
+      },
+      "tailNum": "",
+      "date": "2021-04-03 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 41.51786,
+      "olng": -81.68264,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "BKL",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-03 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-04 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.79061,
+      "dlng": -97.65222,
+      "meta": {
+        "o": "BUY",
+        "d": "SLN"
+      },
+      "tailNum": "",
+      "date": "2021-04-04 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.79061,
+      "olng": -97.65222,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "SLN",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-04 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-05 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-05 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-05 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-06 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-06 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-06 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-06 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2021-04-07 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 41.78597,
+      "dlng": -87.75242,
+      "meta": {
+        "o": "RDU",
+        "d": "MDW"
+      },
+      "tailNum": "",
+      "date": "2021-04-07 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 41.78597,
+      "olng": -87.75242,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "MDW",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-07 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-07 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-08 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-08 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-09 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.83092,
+      "dlng": -94.89031,
+      "meta": {
+        "o": "BUY",
+        "d": "IXD"
+      },
+      "tailNum": "",
+      "date": "2021-04-09 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.83092,
+      "olng": -94.89031,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "IXD",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-09 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-09 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.86822,
+      "dlng": -95.38694,
+      "meta": {
+        "o": "BUY",
+        "d": "K88"
+      },
+      "tailNum": "",
+      "date": "2021-04-10 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.86822,
+      "olng": -95.38694,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "K88",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-10 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-10 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 39.52103,
+      "dlng": -75.72367,
+      "meta": {
+        "o": "BUY",
+        "d": "EVY"
+      },
+      "tailNum": "",
+      "date": "2021-04-11 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.52103,
+      "olng": -75.72367,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "EVY",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-11 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-11 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-11 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-12 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-12 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-12 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-13 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-13 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-13 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-14 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 39.67871,
+      "dlng": -75.60663,
+      "meta": {
+        "o": "BUY",
+        "d": "ILG"
+      },
+      "tailNum": "",
+      "date": "2021-04-14 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.67871,
+      "olng": -75.60663,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "ILG",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-14 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-14 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-14 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-15 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-15 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-15 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-16 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.83092,
+      "dlng": -94.89031,
+      "meta": {
+        "o": "BUY",
+        "d": "IXD"
+      },
+      "tailNum": "",
+      "date": "2021-04-16 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.83092,
+      "olng": -94.89031,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "IXD",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-16 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-17 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-17 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-17 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "APA",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2021-04-17 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "GSO",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-18 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-18 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-19 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.79061,
+      "dlng": -97.65222,
+      "meta": {
+        "o": "BUY",
+        "d": "SLN"
+      },
+      "tailNum": "",
+      "date": "2021-04-19 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.79061,
+      "olng": -97.65222,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "SLN",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-19 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-20 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.83092,
+      "dlng": -94.89031,
+      "meta": {
+        "o": "BUY",
+        "d": "IXD"
+      },
+      "tailNum": "",
+      "date": "2021-04-20 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.83092,
+      "olng": -94.89031,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "IXD",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-20 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-21 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-21 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-21 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-22 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-22 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-22 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-23 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-23 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-23 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-24 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.86822,
+      "dlng": -95.38694,
+      "meta": {
+        "o": "BUY",
+        "d": "K88"
+      },
+      "tailNum": "",
+      "date": "2021-04-24 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.86822,
+      "olng": -95.38694,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "K88",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-24 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-24 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.81109,
+      "dlng": -83.99407,
+      "meta": {
+        "o": "BUY",
+        "d": "TYS"
+      },
+      "tailNum": "",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.81109,
+      "olng": -83.99407,
+      "dlat": 39.87208,
+      "dlng": -75.24066,
+      "meta": {
+        "o": "TYS",
+        "d": "PHL"
+      },
+      "tailNum": "",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.87208,
+      "olng": -75.24066,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "PHL",
+        "d": "INT"
+      },
+      "tailNum": "",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "INT",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-25 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.13964,
+      "dlng": -78.45234,
+      "meta": {
+        "o": "BUY",
+        "d": "CHO"
+      },
+      "tailNum": "",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.13964,
+      "olng": -78.45234,
+      "dlat": 33.90936,
+      "dlng": -94.85936,
+      "meta": {
+        "o": "CHO",
+        "d": "4O4"
+      },
+      "tailNum": "",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 33.90936,
+      "olng": -94.85936,
+      "dlat": 38.13964,
+      "dlng": -78.45234,
+      "meta": {
+        "o": "4O4",
+        "d": "CHO"
+      },
+      "tailNum": "",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.13964,
+      "olng": -78.45234,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CHO",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-26 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-27 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-27 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-27 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-28 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "BUY",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2021-04-28 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 38.79061,
+      "dlng": -97.65222,
+      "meta": {
+        "o": "GSO",
+        "d": "SLN"
+      },
+      "tailNum": "",
+      "date": "2021-04-28 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.79061,
+      "olng": -97.65222,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "SLN",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-28 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-29 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.64833,
+      "dlng": -92.65244,
+      "meta": {
+        "o": "BUY",
+        "d": "LBO"
+      },
+      "tailNum": "",
+      "date": "2021-04-29 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.64833,
+      "olng": -92.65244,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "LBO",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-29 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-30 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 30.04242,
+      "dlng": -90.02825,
+      "meta": {
+        "o": "BUY",
+        "d": "NEW"
+      },
+      "tailNum": "",
+      "date": "2021-04-30 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 30.04242,
+      "olng": -90.02825,
+      "dlat": 39.57012,
+      "dlng": -104.84929,
+      "meta": {
+        "o": "NEW",
+        "d": "APA"
+      },
+      "tailNum": "",
+      "date": "2021-04-30 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.57012,
+      "olng": -104.84929,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "APA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2021-04-30 00:00:00",
+      "source_file": "Flight Logs 2021.xlsx",
+      "source_sheet": "242ML CJ"
+    }
+  ]
+}

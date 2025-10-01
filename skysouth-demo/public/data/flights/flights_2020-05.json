@@ -1,0 +1,593 @@
+{
+  "month": "2020-05",
+  "flights": [
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "BUY",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-05 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "INT",
+        "d": "IAD"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-05 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.68828,
+      "dlng": -78.05447,
+      "meta": {
+        "o": "IAD",
+        "d": "AVC"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-05 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.68828,
+      "olng": -78.05447,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "AVC",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-06 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-07 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 27.7,
+      "dlng": -80.4,
+      "meta": {
+        "o": "RDU",
+        "d": "VRB"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-07 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 27.7,
+      "olng": -80.4,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "VRB",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-07 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 41.03742,
+      "dlng": -81.46768,
+      "meta": {
+        "o": "BUY",
+        "d": "AKR"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-13 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 41.03742,
+      "olng": -81.46768,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "AKR",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-14 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.17408,
+      "dlng": -85.73649,
+      "meta": {
+        "o": "BUY",
+        "d": "SDF"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-17 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 38.17408,
+      "olng": -85.73649,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "SDF",
+        "d": "INT"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-17 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "INT",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-17 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.94135,
+      "dlng": -76.77238,
+      "meta": {
+        "o": "BUY",
+        "d": "W00"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-20 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 38.94135,
+      "olng": -76.77238,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "W00",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-20 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.33143,
+      "dlng": -77.60883,
+      "meta": {
+        "o": "BUY",
+        "d": "ISO"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-20 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.33143,
+      "olng": -77.60883,
+      "dlat": 27.7,
+      "dlng": -80.4,
+      "meta": {
+        "o": "ISO",
+        "d": "VRB"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-20 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 27.7,
+      "olng": -80.4,
+      "dlat": 35.6,
+      "dlng": -79.1,
+      "meta": {
+        "o": "VRB",
+        "d": "TTA"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-21 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.6,
+      "olng": -79.1,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TTA",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-22 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.6,
+      "dlng": -79.1,
+      "meta": {
+        "o": "BUY",
+        "d": "TTA"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-27 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.6,
+      "olng": -79.1,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TTA",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2020-05-29 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.32547,
+      "dlng": -79.97542,
+      "meta": {
+        "o": "BUY",
+        "d": "ROA"
+      },
+      "tailNum": "",
+      "date": "2020-05-02 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 37.32547,
+      "olng": -79.97542,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "ROA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-05-02 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.12447,
+      "dlng": -86.67818,
+      "meta": {
+        "o": "BUY",
+        "d": "BNA"
+      },
+      "tailNum": "",
+      "date": "2020-05-03 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.12447,
+      "olng": -86.67818,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BNA",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2020-05-03 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-05-03 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2020-05-15 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BUY",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2020-05-19 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "IAD",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2020-05-19 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-05-19 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "BUY",
+        "d": "INT"
+      },
+      "tailNum": "",
+      "date": "2020-05-20 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 40.08194,
+      "dlng": -75.01058,
+      "meta": {
+        "o": "INT",
+        "d": "PNE"
+      },
+      "tailNum": "",
+      "date": "2020-05-20 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 40.08194,
+      "olng": -75.01058,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "PNE",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-05-20 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "BUY",
+        "d": "INT"
+      },
+      "tailNum": "",
+      "date": "2020-05-22 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 39.87208,
+      "dlng": -75.24066,
+      "meta": {
+        "o": "INT",
+        "d": "PHL"
+      },
+      "tailNum": "",
+      "date": "2020-05-22 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.87208,
+      "olng": -75.24066,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "PHL",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-05-22 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "BUY",
+        "d": "INT"
+      },
+      "tailNum": "",
+      "date": "2020-05-23 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 41.51786,
+      "dlng": -81.68264,
+      "meta": {
+        "o": "INT",
+        "d": "BKL"
+      },
+      "tailNum": "",
+      "date": "2020-05-23 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 41.51786,
+      "olng": -81.68264,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BKL",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-05-23 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 34.269,
+      "dlng": -88.76989,
+      "meta": {
+        "o": "BUY",
+        "d": "TUP"
+      },
+      "tailNum": "",
+      "date": "2020-05-27 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 34.269,
+      "olng": -88.76989,
+      "dlat": 30.3534,
+      "dlng": -95.41508,
+      "meta": {
+        "o": "TUP",
+        "d": "CXO"
+      },
+      "tailNum": "",
+      "date": "2020-05-27 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 30.3534,
+      "olng": -95.41508,
+      "dlat": 34.269,
+      "dlng": -88.76989,
+      "meta": {
+        "o": "CXO",
+        "d": "TUP"
+      },
+      "tailNum": "",
+      "date": "2020-05-29 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 34.269,
+      "olng": -88.76989,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TUP",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-05-29 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    }
+  ]
+}

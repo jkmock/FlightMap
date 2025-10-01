@@ -1,0 +1,1307 @@
+{
+  "month": "2024-08",
+  "flights": [
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GSO",
+        "d": "BUY"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-08 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 41.51786,
+      "dlng": -81.68264,
+      "meta": {
+        "o": "BUY",
+        "d": "BKL"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-08 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 41.51786,
+      "olng": -81.68264,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BKL",
+        "d": "BUY"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-08 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "BUY",
+        "d": "GSO"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-08 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GSO",
+        "d": "BUY"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-17 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.12447,
+      "dlng": -86.67818,
+      "meta": {
+        "o": "BUY",
+        "d": "BNA"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-18 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.12447,
+      "olng": -86.67818,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BNA",
+        "d": "IAD"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-18 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-18 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "BUY",
+        "d": "GSO"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-20 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GSO",
+        "d": "BUY"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-22 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.13371,
+      "dlng": -80.22199,
+      "meta": {
+        "o": "BUY",
+        "d": "INT"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-23 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.13371,
+      "olng": -80.22199,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "INT",
+        "d": "CHS"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-23 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CHS",
+        "d": "BUY"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-23 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BUY",
+        "d": "IAD"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-25 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 39.87208,
+      "dlng": -75.24066,
+      "meta": {
+        "o": "IAD",
+        "d": "PHL"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-25 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 39.87208,
+      "olng": -75.24066,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "PHL",
+        "d": "IAD"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-25 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-25 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 34.84794,
+      "dlng": -82.35,
+      "meta": {
+        "o": "BUY",
+        "d": "GMU"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-29 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 34.84794,
+      "olng": -82.35,
+      "dlat": 35.21375,
+      "dlng": -80.94906,
+      "meta": {
+        "o": "GMU",
+        "d": "CLT"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-29 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 35.21375,
+      "olng": -80.94906,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CLT",
+        "d": "BUY"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-29 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.81109,
+      "dlng": -83.99407,
+      "meta": {
+        "o": "BUY",
+        "d": "TYS"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-31 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 35.81109,
+      "olng": -83.99407,
+      "dlat": 39.10333,
+      "dlng": -84.41861,
+      "meta": {
+        "o": "TYS",
+        "d": "LUK"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-31 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 39.10333,
+      "olng": -84.41861,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "LUK",
+        "d": "BUY"
+      },
+      "tailNum": "30M",
+      "date": "2024-08-31 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "CJ1 N30M"
+    },
+    {
+      "olat": 41.5,
+      "olng": -93.7,
+      "dlat": 39.17573,
+      "dlng": -76.66899,
+      "meta": {
+        "o": "DSM",
+        "d": "BWI"
+      },
+      "tailNum": "",
+      "date": "2024-08-01 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.17573,
+      "olng": -76.66899,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BWI",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-01 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.12447,
+      "dlng": -86.67818,
+      "meta": {
+        "o": "BUY",
+        "d": "BNA"
+      },
+      "tailNum": "",
+      "date": "2024-08-03 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.12447,
+      "olng": -86.67818,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BNA",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2024-08-03 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-03 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "BUY",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2024-08-03 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GSO",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-03 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 39.17573,
+      "dlng": -76.66899,
+      "meta": {
+        "o": "BUY",
+        "d": "BWI"
+      },
+      "tailNum": "",
+      "date": "2024-08-04 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.17573,
+      "olng": -76.66899,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "BWI",
+        "d": "ORL"
+      },
+      "tailNum": "",
+      "date": "2024-08-04 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 39.17573,
+      "dlng": -76.66899,
+      "meta": {
+        "o": "ORL",
+        "d": "BWI"
+      },
+      "tailNum": "",
+      "date": "2024-08-04 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.17573,
+      "olng": -76.66899,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BWI",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-04 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 33.56389,
+      "dlng": -86.75231,
+      "meta": {
+        "o": "BUY",
+        "d": "BHM"
+      },
+      "tailNum": "",
+      "date": "2024-08-05 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.56389,
+      "olng": -86.75231,
+      "dlat": 40.85011,
+      "dlng": -74.06083,
+      "meta": {
+        "o": "BHM",
+        "d": "TEB"
+      },
+      "tailNum": "",
+      "date": "2024-08-05 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 40.85011,
+      "olng": -74.06083,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TEB",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-05 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 27.97547,
+      "dlng": -82.53325,
+      "meta": {
+        "o": "BUY",
+        "d": "TPA"
+      },
+      "tailNum": "",
+      "date": "2024-08-07 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 27.97547,
+      "olng": -82.53325,
+      "dlat": 29.17991,
+      "dlng": -81.05804,
+      "meta": {
+        "o": "TPA",
+        "d": "DAB"
+      },
+      "tailNum": "",
+      "date": "2024-08-07 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 29.17991,
+      "olng": -81.05804,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "DAB",
+        "d": "ORL"
+      },
+      "tailNum": "",
+      "date": "2024-08-07 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 27.97547,
+      "dlng": -82.53325,
+      "meta": {
+        "o": "ORL",
+        "d": "TPA"
+      },
+      "tailNum": "",
+      "date": "2024-08-07 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 27.97547,
+      "olng": -82.53325,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TPA",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-07 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2024-08-08 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 28.5,
+      "dlng": -81.3,
+      "meta": {
+        "o": "CHS",
+        "d": "ORL"
+      },
+      "tailNum": "",
+      "date": "2024-08-08 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 28.5,
+      "olng": -81.3,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "ORL",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2024-08-08 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "CHS",
+        "d": "GSO"
+      },
+      "tailNum": "",
+      "date": "2024-08-08 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GSO",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-08 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.43611,
+      "dlng": -82.54205,
+      "meta": {
+        "o": "BUY",
+        "d": "AVL"
+      },
+      "tailNum": "",
+      "date": "2024-08-14 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.43611,
+      "olng": -82.54205,
+      "dlat": 35.21375,
+      "dlng": -80.94906,
+      "meta": {
+        "o": "AVL",
+        "d": "CLT"
+      },
+      "tailNum": "",
+      "date": "2024-08-14 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.21375,
+      "olng": -80.94906,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CLT",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-14 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 33.36994,
+      "dlng": -81.9645,
+      "meta": {
+        "o": "BUY",
+        "d": "AGS"
+      },
+      "tailNum": "",
+      "date": "2024-08-14 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.36994,
+      "olng": -81.9645,
+      "dlat": 38.13964,
+      "dlng": -78.45234,
+      "meta": {
+        "o": "AGS",
+        "d": "CHO"
+      },
+      "tailNum": "",
+      "date": "2024-08-14 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.13964,
+      "olng": -78.45234,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CHO",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-14 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.2,
+      "dlng": -80.4,
+      "meta": {
+        "o": "BUY",
+        "d": "BCB"
+      },
+      "tailNum": "",
+      "date": "2024-08-16 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 37.2,
+      "olng": -80.4,
+      "dlat": 32.5,
+      "dlng": -83.8,
+      "meta": {
+        "o": "BCB",
+        "d": "PXE"
+      },
+      "tailNum": "",
+      "date": "2024-08-16 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.5,
+      "olng": -83.8,
+      "dlat": 34.27263,
+      "dlng": -83.83023,
+      "meta": {
+        "o": "PXE",
+        "d": "GVL"
+      },
+      "tailNum": "",
+      "date": "2024-08-16 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 34.27263,
+      "olng": -83.83023,
+      "dlat": 37.2,
+      "dlng": -80.4,
+      "meta": {
+        "o": "GVL",
+        "d": "BCB"
+      },
+      "tailNum": "",
+      "date": "2024-08-16 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 37.2,
+      "olng": -80.4,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "BCB",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-16 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.32547,
+      "dlng": -79.97542,
+      "meta": {
+        "o": "BUY",
+        "d": "ROA"
+      },
+      "tailNum": "",
+      "date": "2024-08-19 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 37.32547,
+      "olng": -79.97542,
+      "dlat": 33.6367,
+      "dlng": -84.42786,
+      "meta": {
+        "o": "ROA",
+        "d": "ATL"
+      },
+      "tailNum": "",
+      "date": "2024-08-19 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.6367,
+      "olng": -84.42786,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "ATL",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-19 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 37.32547,
+      "dlng": -79.97542,
+      "meta": {
+        "o": "BUY",
+        "d": "ROA"
+      },
+      "tailNum": "",
+      "date": "2024-08-19 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 37.32547,
+      "olng": -79.97542,
+      "dlat": 42.88083,
+      "dlng": -85.52281,
+      "meta": {
+        "o": "ROA",
+        "d": "GRR"
+      },
+      "tailNum": "",
+      "date": "2024-08-20 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 42.88083,
+      "olng": -85.52281,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GRR",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-20 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "BUY",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2024-08-21 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 42.2,
+      "dlng": -83.5,
+      "meta": {
+        "o": "IAD",
+        "d": "YIP"
+      },
+      "tailNum": "",
+      "date": "2024-08-21 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 42.2,
+      "olng": -83.5,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "YIP",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2024-08-21 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-21 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2024-08-23 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 36.12447,
+      "dlng": -86.67818,
+      "meta": {
+        "o": "CHS",
+        "d": "BNA"
+      },
+      "tailNum": "",
+      "date": "2024-08-23 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.12447,
+      "olng": -86.67818,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BNA",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2024-08-23 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CHS",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-23 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.21375,
+      "dlng": -80.94906,
+      "meta": {
+        "o": "BUY",
+        "d": "CLT"
+      },
+      "tailNum": "",
+      "date": "2024-08-26 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.21375,
+      "olng": -80.94906,
+      "dlat": 33.56389,
+      "dlng": -86.75231,
+      "meta": {
+        "o": "CLT",
+        "d": "BHM"
+      },
+      "tailNum": "",
+      "date": "2024-08-26 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 33.56389,
+      "olng": -86.75231,
+      "dlat": 35.21375,
+      "dlng": -80.94906,
+      "meta": {
+        "o": "BHM",
+        "d": "CLT"
+      },
+      "tailNum": "",
+      "date": "2024-08-26 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 35.21375,
+      "olng": -80.94906,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CLT",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-26 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 38.13964,
+      "dlng": -78.45234,
+      "meta": {
+        "o": "BUY",
+        "d": "CHO"
+      },
+      "tailNum": "",
+      "date": "2024-08-27 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.13964,
+      "olng": -78.45234,
+      "dlat": 32.12758,
+      "dlng": -81.20214,
+      "meta": {
+        "o": "CHO",
+        "d": "SAV"
+      },
+      "tailNum": "",
+      "date": "2024-08-27 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.12758,
+      "olng": -81.20214,
+      "dlat": 38.13964,
+      "dlng": -78.45234,
+      "meta": {
+        "o": "SAV",
+        "d": "CHO"
+      },
+      "tailNum": "",
+      "date": "2024-08-27 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 38.13964,
+      "olng": -78.45234,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "CHO",
+        "d": "RIC"
+      },
+      "tailNum": "",
+      "date": "2024-08-27 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-27 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 41.06695,
+      "dlng": -73.70757,
+      "meta": {
+        "o": "BUY",
+        "d": "HPN"
+      },
+      "tailNum": "",
+      "date": "2024-08-29 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.06695,
+      "olng": -73.70757,
+      "dlat": 42.08308,
+      "dlng": -80.17394,
+      "meta": {
+        "o": "HPN",
+        "d": "ERI"
+      },
+      "tailNum": "",
+      "date": "2024-08-29 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 42.08308,
+      "olng": -80.17394,
+      "dlat": 41.06695,
+      "dlng": -73.70757,
+      "meta": {
+        "o": "ERI",
+        "d": "HPN"
+      },
+      "tailNum": "",
+      "date": "2024-08-29 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.06695,
+      "olng": -73.70757,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "HPN",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-30 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2024-08-30 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 26.58661,
+      "dlng": -81.86325,
+      "meta": {
+        "o": "CHS",
+        "d": "FMY"
+      },
+      "tailNum": "",
+      "date": "2024-08-30 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 26.58661,
+      "olng": -81.86325,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "FMY",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2024-08-30 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CHS",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-30 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 41.06695,
+      "dlng": -73.70757,
+      "meta": {
+        "o": "BUY",
+        "d": "HPN"
+      },
+      "tailNum": "",
+      "date": "2024-08-31 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.06695,
+      "olng": -73.70757,
+      "dlat": 39.87208,
+      "dlng": -75.24066,
+      "meta": {
+        "o": "HPN",
+        "d": "PHL"
+      },
+      "tailNum": "",
+      "date": "2024-08-31 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 39.87208,
+      "olng": -75.24066,
+      "dlat": 41.06695,
+      "dlng": -73.70757,
+      "meta": {
+        "o": "PHL",
+        "d": "HPN"
+      },
+      "tailNum": "",
+      "date": "2024-08-31 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    },
+    {
+      "olat": 41.06695,
+      "olng": -73.70757,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "HPN",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2024-08-31 00:00:00",
+      "source_file": "Flight Logs 2024.xlsx",
+      "source_sheet": "90KM CJ3"
+    }
+  ]
+}
