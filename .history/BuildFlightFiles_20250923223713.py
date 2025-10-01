@@ -7,7 +7,7 @@ from airportsdata import load as load_airports
 
 # ---- settings you might change ----
 INPUT_PATTERN = "Flight Logs *.xlsx"  # Pattern to match multiple Excel files
-MAX_SHEETS = 2              # Only process first 2 sheets per file
+MAX_SHEETS = 3              # Only process first 2 sheets per file
 ORIGIN_COL = "From"        # column with origin airport code
 DEST_COL   = "To"
 DATE_COL   = "Date"   # column with destination airport code

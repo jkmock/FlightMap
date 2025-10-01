@@ -22,7 +22,6 @@ export default function SkySouthFlightsDemo() {
   const [mapActivated, setMapActivated] = useState(false);
   const [loading, setLoading] = useState(true);
   const [showArcs, setShowArcs] = useState(true);
-  const [animationPhase, setAnimationPhase] = useState('showing'); // 'showing', 'removing', 'dots-only'
 
   // Load all flights at startup
   useEffect(() => {
@@ -105,7 +104,7 @@ export default function SkySouthFlightsDemo() {
   }, []);
 
 
-  // Animation logic - three phases: showing, removing arcs, dots-only
+  // Animation logic - sliding window of 10 arcs
   useEffect(() => {
     if (!playing || allFlights.length === 0) return;
 
@@ -113,109 +112,51 @@ export default function SkySouthFlightsDemo() {
       setCurrentIndex((prevIndex) => {
         const newIndex = prevIndex + direction;
 
-        // PHASE 1: SHOWING - Forward progression showing all flights
-        if (animationPhase === 'showing') {
-          // Handle boundary conditions
-          if (newIndex < 0) {
-            return 0;
-          }
-
-          // When we reach the end, transition to removing phase
-          if (newIndex >= allFlights.length) {
-            setAnimationPhase('removing');
-            return allFlights.length - 1;
-          }
-
-          // Add dots when arcs disappear (going forward)
-          if (direction > 0 && newIndex > 199) {
-            const disappearingArcIndex = newIndex - 200;
-            const disappearingArc = allFlights[disappearingArcIndex];
-            setDots((prevDots) => [
-              ...prevDots,
-              { position: [disappearingArc.olng, disappearingArc.olat], id: `${disappearingArcIndex}-origin` },
-              { position: [disappearingArc.dlng, disappearingArc.dlat], id: `${disappearingArcIndex}-dest` },
-            ]);
-          }
-
-          // Remove dots when going backward and arc reappears
-          if (direction < 0) {
-            const reappearingArcIndex = newIndex + 200;
-            if (reappearingArcIndex < allFlights.length) {
-              setDots((prevDots) =>
-                prevDots.filter(
-                  (dot) => !dot.id.startsWith(`${reappearingArcIndex}-`)
-                )
-              );
-            }
-          }
-
-          return newIndex;
-        }
-
-        // PHASE 2: REMOVING - Remove the oldest arc from the sliding window (200 arcs remain at end of phase 1)
-        if (animationPhase === 'removing') {
-          // Start from the oldest arc in the window (currentIndex - 199)
-          // and work forward, removing one at a time
-          const oldestArcIndex = prevIndex - 199;
-
-          // Add dots for the oldest arc being removed
-          if (oldestArcIndex >= 0 && oldestArcIndex < allFlights.length) {
-            const removingArc = allFlights[oldestArcIndex];
-            setDots((prevDots) => [
-              ...prevDots,
-              { position: [removingArc.olng, removingArc.olat], id: `${oldestArcIndex}-origin` },
-              { position: [removingArc.dlng, removingArc.dlat], id: `${oldestArcIndex}-dest` },
-            ]);
-          }
-
-          // Move the index forward to shrink the window from the left
-          const newIndex = prevIndex + 1;
-
-          // When we've removed all 200 arcs (index reaches allFlights.length + 200)
-          if (newIndex >= allFlights.length + 200) {
-            setAnimationPhase('dots-only');
-            setPlaying(false); // Stop animation
-            return allFlights.length - 1;
-          }
-
-          return newIndex;
-        }
-
-        // PHASE 3: DOTS-ONLY - Animation complete, only dots visible
-        if (animationPhase === 'dots-only') {
-          setPlaying(false);
+        // Handle boundary conditions
+        if (newIndex < 0) {
           return 0;
         }
+        if (newIndex >= allFlights.length) {
+          return allFlights.length - 1;
+        }
 
-        return prevIndex;
+        // Add dots when arcs disappear (going forward)
+        if (direction > 0 && newIndex > 199) {
+          const disappearingArcIndex = newIndex - 200;
+          const disappearingArc = allFlights[disappearingArcIndex];
+          setDots((prevDots) => [
+            ...prevDots,
+            { position: [disappearingArc.olng, disappearingArc.olat], id: `${disappearingArcIndex}-origin` },
+            { position: [disappearingArc.dlng, disappearingArc.dlat], id: `${disappearingArcIndex}-dest` },
+          ]);
+        }
+
+        // Remove dots when going backward and arc reappears
+        if (direction < 0) {
+          const reappearingArcIndex = newIndex + 200;
+          if (reappearingArcIndex < allFlights.length) {
+            setDots((prevDots) =>
+              prevDots.filter(
+                (dot) => !dot.id.startsWith(`${reappearingArcIndex}-`)
+              )
+            );
+          }
+        }
+
+        return newIndex;
       });
-    }, 5); // Even faster animation speed
+    }, 25); // Even faster animation speed
 
     return () => clearInterval(id);
-  }, [playing, direction, allFlights, animationPhase]);
+  }, [playing, direction, allFlights]);
 
-  // Get the current window of 200 arcs (phase-aware)
+  // Get the current window of 200 arcs
   const visibleArcs = useMemo(() => {
     if (allFlights.length === 0) return [];
-
-    // PHASE 1: SHOWING - sliding window of 200 arcs
-    if (animationPhase === 'showing') {
-      const start = Math.max(0, currentIndex - 199);
-      const end = Math.min(allFlights.length, currentIndex + 1);
-      return allFlights.slice(start, end);
-    }
-
-    // PHASE 2: REMOVING - shrink window from the left (oldest arcs disappear first)
-    // currentIndex keeps moving forward, but we slice from (currentIndex - 199) onwards
-    if (animationPhase === 'removing') {
-      const start = Math.max(0, currentIndex - 199);
-      const end = Math.min(allFlights.length, currentIndex + 1);
-      return allFlights.slice(start, end);
-    }
-
-    // PHASE 3: DOTS-ONLY - no arcs visible
-    return [];
-  }, [allFlights, currentIndex, animationPhase]);
+    const start = Math.max(0, currentIndex - 199);
+    const end = Math.min(allFlights.length, currentIndex + 1);
+    return allFlights.slice(start, end);
+  }, [allFlights, currentIndex]);
 
   const arcLayer = new ArcLayer({
     id: 'arc-layer',
@@ -284,15 +225,9 @@ export default function SkySouthFlightsDemo() {
       )}
 
       {/* Animation Controls */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[75%] h-18 flex items-center px-6 bg-white/8 backdrop-blur-sm rounded-full space-x-2">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[70%] h-18 flex items-center px-6 bg-white/8 backdrop-blur-sm rounded-full space-x-2">
         <button
-          onClick={() => {
-            setDirection(-1);
-            if (animationPhase === 'dots-only') {
-              setAnimationPhase('removing');
-              setCurrentIndex(allFlights.length - 1);
-            }
-          }}
+          onClick={() => setDirection(-1)}
           className="w-12 h-10 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
           style={{ background: "#d9d9d9ff" }}
           disabled={loading}
@@ -303,36 +238,17 @@ export default function SkySouthFlightsDemo() {
           onClick={() => setPlaying((p) => !p)}
           className="w-28 h-10 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
           style={{ background: "#d9d9d9ff" }}
-          disabled={loading || animationPhase === 'dots-only'}
+          disabled={loading}
         >
           {playing ? "Pause" : "Play"}
         </button>
         <button
-          onClick={() => {
-            setDirection(1);
-            if (animationPhase === 'dots-only') {
-              setAnimationPhase('removing');
-              setCurrentIndex(allFlights.length - 1);
-            }
-          }}
+          onClick={() => setDirection(1)}
           className="w-12 h-10 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
           style={{ background: "#d9d9d9ff" }}
           disabled={loading}
         >
           →
-        </button>
-        <button
-          onClick={() => {
-            setCurrentIndex(0);
-            setDots([]);
-            setAnimationPhase('showing');
-            setPlaying(false);
-          }}
-          className="w-20 h-10 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white text-xs"
-          style={{ background: "#d9d9d9ff" }}
-          disabled={loading}
-        >
-          Reset
         </button>
         <button
           onClick={() => setShowArcs(!showArcs)}
@@ -343,13 +259,7 @@ export default function SkySouthFlightsDemo() {
           {showArcs ? "Hide" : "Show"} Arcs
         </button>
         <div className="flex-1 text-center text-white text-sm">
-          {animationPhase === 'showing' && `Arc ${Math.max(1, currentIndex + 1)} of ${allFlights.length}`}
-          {animationPhase === 'removing' && `Removing arcs: ${Math.max(0, allFlights.length + 200 - currentIndex - 1)} remaining`}
-          {animationPhase === 'dots-only' && `Animation complete`}
-          {' | '}
-          {allFlights[Math.min(currentIndex, allFlights.length - 1)]?.timeKey || (allFlights[Math.min(currentIndex, allFlights.length - 1)] ? allFlights[Math.min(currentIndex, allFlights.length - 1)].year + '-' + String(allFlights[Math.min(currentIndex, allFlights.length - 1)].month || 1).padStart(2, '0') : 'Loading...')}
-          {' | '}
-          {dots.length} dots
+          Arc {Math.max(1, currentIndex + 1)} of {allFlights.length} | {allFlights[currentIndex]?.timeKey || allFlights[currentIndex]?.year + '-' + String(allFlights[currentIndex]?.month || 1).padStart(2, '0') || 'Loading...'} | {dots.length} dots
         </div>
       </div>
     </div>
