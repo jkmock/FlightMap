@@ -21,12 +21,14 @@ export default function SkySouthFlightsDemo() {
   const [dots, setDots] = useState([]);
   const [dotPositions, setDotPositions] = useState(new Set()); // Track unique dot positions
   const [mapActivated, setMapActivated] = useState(false);
+  const [hasEverActivated, setHasEverActivated] = useState(false);
   const [loading, setLoading] = useState(true);
   const [showArcs, setShowArcs] = useState(true);
   const [animationPhase, setAnimationPhase] = useState('showing'); // 'showing', 'removing', 'dots-only'
   const [uniqueAirports, setUniqueAirports] = useState(0);
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [titleVisible, setTitleVisible] = useState(true);
+  const [hoveredAirport, setHoveredAirport] = useState(null);
 
   const titles = [
     "22,000 Flights",
@@ -43,7 +45,7 @@ export default function SkySouthFlightsDemo() {
 
       try {
         // Try to load year-month format files first (new format)
-        const years = [2023, 2024, 2025]; // Add more years as needed
+        const years = [2020, 2021, 2022, 2023, 2024, 2025]; // Add more years as needed
         const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
         let filesFound = 0;
@@ -104,7 +106,22 @@ export default function SkySouthFlightsDemo() {
         }
 
         console.log(`Total flights loaded: ${allFlightData.length} from ${filesFound} files`);
-        setAllFlights(allFlightData);
+
+        // Deduplicate flights based on route (origin and destination only)
+        const uniqueFlights = [];
+        const seen = new Set();
+
+        for (const flight of allFlightData) {
+          // Create unique key from coordinates only (route-based deduplication)
+          const key = `${flight.olat},${flight.olng}-${flight.dlat},${flight.dlng}`;
+          if (!seen.has(key)) {
+            seen.add(key);
+            uniqueFlights.push(flight);
+          }
+        }
+
+        console.log(`Unique routes after deduplication: ${uniqueFlights.length} (removed ${allFlightData.length - uniqueFlights.length} duplicate routes)`);
+        setAllFlights(uniqueFlights);
         setLoading(false);
       } catch (err) {
         console.error('Failed to load flights data', err);
@@ -146,6 +163,37 @@ export default function SkySouthFlightsDemo() {
     return () => clearInterval(interval);
   }, [titles.length]);
 
+  // Auto-play when flights finish loading and buttons are visible
+  const hasAutoStarted = useRef(false);
+  const buttonContainerRef = useRef(null);
+
+  useEffect(() => {
+    if (!loading && allFlights.length > 0 && !hasAutoStarted.current) {
+      // Check if the play/reset buttons are in viewport
+      const checkVisibility = () => {
+        if (buttonContainerRef.current) {
+          const rect = buttonContainerRef.current.getBoundingClientRect();
+          const isVisible = rect.top >= 0 && rect.top < window.innerHeight;
+          if (isVisible && !hasAutoStarted.current) {
+            hasAutoStarted.current = true;
+            setPlaying(true);
+          }
+        }
+      };
+
+      // Check immediately
+      checkVisibility();
+
+      // Also check on scroll
+      const handleScroll = () => {
+        checkVisibility();
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+  }, [loading, allFlights.length]);
+
   // Animation logic - three phases: showing, removing arcs, dots-only
   useEffect(() => {
     if (!playing || allFlights.length === 0) return;
@@ -167,13 +215,12 @@ export default function SkySouthFlightsDemo() {
             return allFlights.length - 1;
           }
 
-          // Add dots when arcs disappear (going forward)
-          if (direction > 0 && newIndex > 199) {
-            const disappearingArcIndex = newIndex - 200;
-            const disappearingArc = allFlights[disappearingArcIndex];
+          // Add dots when arcs appear (going forward)
+          if (direction > 0 && newIndex >= 0 && newIndex < allFlights.length) {
+            const appearingArc = allFlights[newIndex];
 
-            const originKey = `${disappearingArc.olng},${disappearingArc.olat}`;
-            const destKey = `${disappearingArc.dlng},${disappearingArc.dlat}`;
+            const originKey = `${appearingArc.olng},${appearingArc.olat}`;
+            const destKey = `${appearingArc.dlng},${appearingArc.dlat}`;
 
             setDotPositions((prevPositions) => {
               const newPositions = new Set(prevPositions);
@@ -184,68 +231,61 @@ export default function SkySouthFlightsDemo() {
 
             setDots((prevDots) => {
               const newDots = [...prevDots];
-              if (!prevDots.some(dot => dot.position[0] === disappearingArc.olng && dot.position[1] === disappearingArc.olat)) {
-                newDots.push({ position: [disappearingArc.olng, disappearingArc.olat], id: originKey });
+              if (!prevDots.some(dot => dot.position[0] === appearingArc.olng && dot.position[1] === appearingArc.olat)) {
+                newDots.push({
+                  position: [appearingArc.olng, appearingArc.olat],
+                  id: originKey,
+                  code: appearingArc.meta?.o || ''
+                });
               }
-              if (!prevDots.some(dot => dot.position[0] === disappearingArc.dlng && dot.position[1] === disappearingArc.dlat)) {
-                newDots.push({ position: [disappearingArc.dlng, disappearingArc.dlat], id: destKey });
+              if (!prevDots.some(dot => dot.position[0] === appearingArc.dlng && dot.position[1] === appearingArc.dlat)) {
+                newDots.push({
+                  position: [appearingArc.dlng, appearingArc.dlat],
+                  id: destKey,
+                  code: appearingArc.meta?.d || ''
+                });
               }
               return newDots;
             });
           }
 
-          // Remove dots when going backward and arc reappears
-          if (direction < 0) {
-            const reappearingArcIndex = newIndex + 200;
-            if (reappearingArcIndex < allFlights.length) {
-              setDots((prevDots) =>
-                prevDots.filter(
-                  (dot) => !dot.id.startsWith(`${reappearingArcIndex}-`)
-                )
-              );
-            }
+          // Remove dots when going backward
+          if (direction < 0 && newIndex >= 0) {
+            // Remove dots that are no longer needed based on visible arcs
+            setDots((prevDots) => {
+              const visibleAirports = new Set();
+              // Get all airports from currently visible arcs
+              for (let i = Math.max(0, newIndex - 149); i <= newIndex && i < allFlights.length; i++) {
+                const arc = allFlights[i];
+                visibleAirports.add(`${arc.olng},${arc.olat}`);
+                visibleAirports.add(`${arc.dlng},${arc.dlat}`);
+              }
+              // Keep only dots that are in visible airports
+              return prevDots.filter(dot => visibleAirports.has(dot.id));
+            });
+
+            setDotPositions((prevPositions) => {
+              const newPositions = new Set();
+              for (let i = Math.max(0, newIndex - 149); i <= newIndex && i < allFlights.length; i++) {
+                const arc = allFlights[i];
+                newPositions.add(`${arc.olng},${arc.olat}`);
+                newPositions.add(`${arc.dlng},${arc.dlat}`);
+              }
+              return newPositions;
+            });
           }
 
           return newIndex;
         }
 
-        // PHASE 2: REMOVING - Remove the oldest arc from the sliding window (200 arcs remain at end of phase 1)
+        // PHASE 2: REMOVING - Remove the oldest arc from the sliding window (150 arcs remain at end of phase 1)
         if (animationPhase === 'removing') {
-          // Start from the oldest arc in the window (currentIndex - 199)
-          // and work forward, removing one at a time
-          const oldestArcIndex = prevIndex - 199;
-
-          // Add dots for the oldest arc being removed
-          if (oldestArcIndex >= 0 && oldestArcIndex < allFlights.length) {
-            const removingArc = allFlights[oldestArcIndex];
-
-            const originKey = `${removingArc.olng},${removingArc.olat}`;
-            const destKey = `${removingArc.dlng},${removingArc.dlat}`;
-
-            setDotPositions((prevPositions) => {
-              const newPositions = new Set(prevPositions);
-              newPositions.add(originKey);
-              newPositions.add(destKey);
-              return newPositions;
-            });
-
-            setDots((prevDots) => {
-              const newDots = [...prevDots];
-              if (!prevDots.some(dot => dot.position[0] === removingArc.olng && dot.position[1] === removingArc.olat)) {
-                newDots.push({ position: [removingArc.olng, removingArc.olat], id: originKey });
-              }
-              if (!prevDots.some(dot => dot.position[0] === removingArc.dlng && dot.position[1] === removingArc.dlat)) {
-                newDots.push({ position: [removingArc.dlng, removingArc.dlat], id: destKey });
-              }
-              return newDots;
-            });
-          }
-
+          // Dots are already present from when arcs appeared, no need to add them
           // Move the index forward to shrink the window from the left
           const newIndex = prevIndex + 1;
 
-          // When we've removed all 200 arcs (index reaches allFlights.length + 200)
-          if (newIndex >= allFlights.length + 200) {
+          // When we've removed all 150 arcs (index reaches allFlights.length + 150)
+          if (newIndex >= allFlights.length + 150) {
             setAnimationPhase('dots-only');
             setPlaying(false); // Stop animation
             return allFlights.length - 1;
@@ -267,21 +307,21 @@ export default function SkySouthFlightsDemo() {
     return () => clearInterval(id);
   }, [playing, direction, allFlights, animationPhase]);
 
-  // Get the current window of 200 arcs (phase-aware)
+  // Get the current window of 150 arcs (phase-aware)
   const visibleArcs = useMemo(() => {
     if (allFlights.length === 0) return [];
 
-    // PHASE 1: SHOWING - sliding window of 200 arcs
+    // PHASE 1: SHOWING - sliding window of 150 arcs
     if (animationPhase === 'showing') {
-      const start = Math.max(0, currentIndex - 199);
+      const start = Math.max(0, currentIndex - 149);
       const end = Math.min(allFlights.length, currentIndex + 1);
       return allFlights.slice(start, end);
     }
 
     // PHASE 2: REMOVING - shrink window from the left (oldest arcs disappear first)
-    // currentIndex keeps moving forward, but we slice from (currentIndex - 199) onwards
+    // currentIndex keeps moving forward, but we slice from (currentIndex - 149) onwards
     if (animationPhase === 'removing') {
-      const start = Math.max(0, currentIndex - 199);
+      const start = Math.max(0, currentIndex - 149);
       const end = Math.min(allFlights.length, currentIndex + 1);
       return allFlights.slice(start, end);
     }
@@ -306,38 +346,64 @@ export default function SkySouthFlightsDemo() {
     id: 'dots-layer',
     data: dots,
     getPosition: d => d.position,
-    getRadius: 6000,
+    getRadius: 10000,
     getFillColor: [255, 255, 255, 180],
     radiusUnits: 'meters',
+    pickable: true,
+    onHover: info => {
+      if (info.object) {
+        setHoveredAirport({
+          code: info.object.code,
+          x: info.x,
+          y: info.y
+        });
+      } else {
+        setHoveredAirport(null);
+      }
+    }
   });
 
   const layers = [dotsLayer, ...(showArcs ? [arcLayer] : [])];
 
   const initialViewState = useMemo(
-    () => ({ longitude: -93, latitude: 36, zoom: 4.1, pitch: 40, bearing: -10 }),
+    () => ({ longitude: -94, latitude: 36.2, zoom: 4.05, pitch: 40, bearing: -10 }),
     []
   );
+
+  // Format date as "Month Year"
+  const formatDate = (flight) => {
+    if (!flight) return 'Loading...';
+    const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
+      'July', 'August', 'September', 'October', 'November', 'December'];
+    const monthIndex = (flight.month || 1) - 1;
+    return `${monthNames[monthIndex]} ${flight.year}`;
+  };
 
   return (
     <div className="relative w-full h-[90vh] bg-black">
       {/* Map & DeckGL */}
       <DeckGL
         initialViewState={initialViewState}
-        controller={mapActivated ? true : { scrollZoom: false }}
+        controller={mapActivated ? true : (hasEverActivated ? false : { scrollZoom: false })}
         layers={layers}
-        onClick={() => setMapActivated(true)}
+        onClick={() => {
+          if (!hasEverActivated) {
+            setHasEverActivated(true);
+          }
+          setMapActivated(true);
+        }}
+        onViewStateChange={({ interactionState }) => {
+          // If user tries to interact with map and hasn't activated yet, enable exploring
+          if (interactionState?.isDragging && !hasEverActivated) {
+            setHasEverActivated(true);
+            setMapActivated(true);
+          }
+        }}
       >
         <Map mapLib={maplibregl} mapStyle={BASEMAP_STYLE} />
       </DeckGL>
 
-      {/* Click to zoom overlay */}
-      {!loading && !mapActivated && (
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
-          <div className="bg-black/50 text-white px-4 py-2 rounded-lg backdrop-blur-sm">
-            Click to enable zoom
-          </div>
-        </div>
-      )}
+      {/* Click to zoom overlay - hidden but functionality remains */}
 
       {/* Cycling Title Overlay */}
       <div className="absolute top-24 left-24 pointer-events-none z-20">
@@ -351,15 +417,19 @@ export default function SkySouthFlightsDemo() {
         </h1>
       </div>
 
-      {/* Big Title Overlay */}
-      {/* <div className="absolute top-24 left-18 z-20">
-        <h1 className="text-6xl md:text-7xl font-bold font-sans text-white drop-shadow-lg">
-          22,000+ Flights
-        </h1>
-        <h1 className="text-6xl md:text-7xl font-bold font-sans text-white drop-shadow-lg mt-12">
-          23 Years
-        </h1>
-      </div> */}
+      {/* Airport Code Tooltip */}
+      {hoveredAirport && hoveredAirport.code && (
+        <div
+          className="absolute pointer-events-none z-30 text-white px-3 py-2 text-xl font-medium"
+          style={{
+            left: hoveredAirport.x,
+            top: hoveredAirport.y - 45,
+            transform: 'translateX(-50%)'
+          }}
+        >
+          {hoveredAirport.code}
+        </div>
+      )}
 
       {/* Loading indicator */}
       {loading && (
@@ -368,25 +438,54 @@ export default function SkySouthFlightsDemo() {
         </div>
       )}
 
-      {/* Animation Controls */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-[75%] h-18 flex items-center px-6 bg-white/8 backdrop-blur-sm rounded-full space-x-2">
-        <button
+      {/* Month and Year - Bottom Left */}
+      <div className="absolute bottom-10 left-24 text-white text-2xl font-medium pointer-events-none">
+        {formatDate(allFlights[Math.min(currentIndex, allFlights.length - 1)])}
+      </div>
+
+      {/* Explore prompt - changes based on map activation */}
+      <div className="absolute bottom-28 left-1/2 -translate-x-1/2 flex flex-col items-center">
+        <div
+          className={`text-white/70 text-lg font-light flex items-center space-x-2 cursor-pointer hover:text-white/90 transition-colors ${!hasEverActivated ? 'animate-pulse' : ''}`}
           onClick={() => {
-            setDirection(-1);
-            if (animationPhase === 'dots-only') {
-              setAnimationPhase('removing');
-              setCurrentIndex(allFlights.length - 1);
+            if (!hasEverActivated) {
+              setHasEverActivated(true);
+              setMapActivated(true);
+            } else {
+              setMapActivated(!mapActivated);
             }
           }}
-          className="w-12 h-10 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
-          style={{ background: "#d9d9d9ff" }}
-          disabled={loading}
         >
-          ←
-        </button>
+          {!hasEverActivated ? (
+            <>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <span>Explore</span>
+            </>
+          ) : mapActivated ? (
+            <>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Exploring enabled</span>
+            </>
+          ) : (
+            <>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span>Exploring disabled</span>
+            </>
+          )}
+        </div>
+      </div>
+
+      {/* Animation Controls - Bottom Center */}
+      <div ref={buttonContainerRef} className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-4">
         <button
           onClick={() => setPlaying((p) => !p)}
-          className="w-28 h-10 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
+          className="w-24 h-12 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
           style={{ background: "#d9d9d9ff" }}
           disabled={loading || animationPhase === 'dots-only'}
         >
@@ -394,49 +493,18 @@ export default function SkySouthFlightsDemo() {
         </button>
         <button
           onClick={() => {
-            setDirection(1);
-            if (animationPhase === 'dots-only') {
-              setAnimationPhase('removing');
-              setCurrentIndex(allFlights.length - 1);
-            }
-          }}
-          className="w-12 h-10 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
-          style={{ background: "#d9d9d9ff" }}
-          disabled={loading}
-        >
-          →
-        </button>
-        <button
-          onClick={() => {
             setCurrentIndex(0);
             setDots([]);
             setDotPositions(new Set());
             setAnimationPhase('showing');
-            setPlaying(false);
+            setPlaying(true);
           }}
-          className="w-20 h-10 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white text-xs"
+          className="w-24 h-12 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
           style={{ background: "#d9d9d9ff" }}
           disabled={loading}
         >
           Reset
         </button>
-        <button
-          onClick={() => setShowArcs(!showArcs)}
-          className="w-20 h-10 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white text-xs"
-          style={{ background: "#d9d9d9ff" }}
-          disabled={loading}
-        >
-          {showArcs ? "Hide" : "Show"} Arcs
-        </button>
-        <div className="flex-1 text-center text-white text-sm">
-          {animationPhase === 'showing' && `Arc ${Math.max(1, currentIndex + 1)} of ${allFlights.length}`}
-          {animationPhase === 'removing' && `Removing arcs: ${Math.max(0, allFlights.length + 200 - currentIndex - 1)} remaining`}
-          {animationPhase === 'dots-only' && `Animation complete`}
-          {' | '}
-          {allFlights[Math.min(currentIndex, allFlights.length - 1)]?.timeKey || (allFlights[Math.min(currentIndex, allFlights.length - 1)] ? allFlights[Math.min(currentIndex, allFlights.length - 1)].year + '-' + String(allFlights[Math.min(currentIndex, allFlights.length - 1)].month || 1).padStart(2, '0') : 'Loading...')}
-          {' | '}
-          {uniqueAirports} unique airports
-        </div>
       </div>
     </div>
   );
