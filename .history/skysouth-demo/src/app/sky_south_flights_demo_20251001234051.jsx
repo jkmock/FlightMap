@@ -366,7 +366,7 @@ export default function SkySouthFlightsDemo() {
   const layers = [dotsLayer, ...(showArcs ? [arcLayer] : [])];
 
   const initialViewState = useMemo(
-    () => ({ longitude: -96, latitude: 36.4, zoom: 4.05, pitch: 40, bearing: -4 }),
+    () => ({ longitude: -96, latitude: 36.4, zoom: 4.05, pitch: 40, bearing: -0 }),
     []
   );
 
