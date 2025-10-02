@@ -401,7 +401,7 @@ export default function SkySouthFlightsDemo() {
       {/* Map & DeckGL */}
       <div
         style={{
-          pointerEvents: (isMobile && !mapActivated && hasEverActivated) ? 'none' : 'auto',
+          pointerEvents: (isMobile && !mapActivated) ? 'none' : 'auto',
           width: '100%',
           height: '100%'
         }}
