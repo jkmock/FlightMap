@@ -378,7 +378,7 @@ export default function SkySouthFlightsDemo() {
 
   const initialViewState = useMemo(
     () => ({
-      longitude: isMobile ? -83.5 : -96,
+      longitude: isMobile ? -84 : -96,
       latitude: isMobile ? 34.5: 36.4,
       zoom: 4.05,
       pitch: 40,
@@ -411,19 +411,14 @@ export default function SkySouthFlightsDemo() {
           controller={mapActivated ? true : (hasEverActivated ? false : { scrollZoom: false })}
           layers={layers}
           onClick={() => {
-            // On desktop, clicking anywhere activates map
-            // On mobile, only the explore button activates it
-            if (!isMobile) {
-              if (!hasEverActivated) {
-                setHasEverActivated(true);
-              }
-              setMapActivated(true);
+            if (!hasEverActivated) {
+              setHasEverActivated(true);
             }
+            setMapActivated(true);
           }}
           onViewStateChange={({ interactionState }) => {
             // If user tries to interact with map and hasn't activated yet, enable exploring
-            // Only on desktop - mobile requires clicking explore button
-            if (!isMobile && interactionState?.isDragging && !hasEverActivated) {
+            if (interactionState?.isDragging && !hasEverActivated) {
               setHasEverActivated(true);
               setMapActivated(true);
             }
