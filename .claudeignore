@@ -1,0 +1,11 @@
+ode_modules/
+.git/
+dist/
+build/
+*.json
+*.log
+*.db
+.env
+__pycache__/
+.venv/
+venv/

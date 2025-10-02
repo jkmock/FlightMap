@@ -129,8 +129,8 @@ export default function SkySouthFlightsDemo() {
 
   // Cycling title animation
   useEffect(() => {
-    const cycleDuration = 6000; // 3 seconds per title
-    const fadeOutDuration = 1000; // 0.5 seconds fade out
+    const cycleDuration = 3000; // 3 seconds per title
+    const fadeOutDuration = 500; // 0.5 seconds fade out
 
     const interval = setInterval(() => {
       // Fade out current title
@@ -314,7 +314,7 @@ export default function SkySouthFlightsDemo() {
   const layers = [dotsLayer, ...(showArcs ? [arcLayer] : [])];
 
   const initialViewState = useMemo(
-    () => ({ longitude: -93, latitude: 36, zoom: 4.1, pitch: 40, bearing: -10 }),
+    () => ({ longitude: -91, latitude: 34.5, zoom: 4.5, pitch: 40, bearing: -10 }),
     []
   );
 
@@ -340,7 +340,7 @@ export default function SkySouthFlightsDemo() {
       )}
 
       {/* Cycling Title Overlay */}
-      <div className="absolute top-24 left-24 pointer-events-none z-20">
+      <div className="absolute top-24 left-16 pointer-events-none z-20">
         <h1
           className="text-5xl md:text-6xl font-bold text-white drop-shadow-2xl transition-opacity duration-500"
           style={{

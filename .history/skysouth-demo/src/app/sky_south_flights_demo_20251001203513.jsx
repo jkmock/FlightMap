@@ -25,15 +25,6 @@ export default function SkySouthFlightsDemo() {
   const [showArcs, setShowArcs] = useState(true);
   const [animationPhase, setAnimationPhase] = useState('showing'); // 'showing', 'removing', 'dots-only'
   const [uniqueAirports, setUniqueAirports] = useState(0);
-  const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
-  const [titleVisible, setTitleVisible] = useState(true);
-
-  const titles = [
-    "22,000 Flights",
-    "310 Airports",
-    "22 Years",
-    "500 organs transported"
-  ];
 
   // Load all flights at startup
   useEffect(() => {
@@ -126,25 +117,6 @@ export default function SkySouthFlightsDemo() {
       setUniqueAirports(airportSet.size);
     }
   }, [allFlights]);
-
-  // Cycling title animation
-  useEffect(() => {
-    const cycleDuration = 6000; // 3 seconds per title
-    const fadeOutDuration = 1000; // 0.5 seconds fade out
-
-    const interval = setInterval(() => {
-      // Fade out current title
-      setTitleVisible(false);
-
-      // After fade out, change to next title and fade in
-      setTimeout(() => {
-        setCurrentTitleIndex((prev) => (prev + 1) % titles.length);
-        setTitleVisible(true);
-      }, fadeOutDuration);
-    }, cycleDuration);
-
-    return () => clearInterval(interval);
-  }, [titles.length]);
 
   // Animation logic - three phases: showing, removing arcs, dots-only
   useEffect(() => {
@@ -314,7 +286,7 @@ export default function SkySouthFlightsDemo() {
   const layers = [dotsLayer, ...(showArcs ? [arcLayer] : [])];
 
   const initialViewState = useMemo(
-    () => ({ longitude: -93, latitude: 36, zoom: 4.1, pitch: 40, bearing: -10 }),
+    () => ({ longitude: -91, latitude: 34.5, zoom: 4.5, pitch: 40, bearing: -10 }),
     []
   );
 
@@ -338,18 +310,6 @@ export default function SkySouthFlightsDemo() {
           </div>
         </div>
       )}
-
-      {/* Cycling Title Overlay */}
-      <div className="absolute top-24 left-24 pointer-events-none z-20">
-        <h1
-          className="text-5xl md:text-6xl font-bold text-white drop-shadow-2xl transition-opacity duration-500"
-          style={{
-            opacity: titleVisible ? 1 : 0,
-          }}
-        >
-          {titles[currentTitleIndex]}
-        </h1>
-      </div>
 
       {/* Big Title Overlay */}
       {/* <div className="absolute top-24 left-18 z-20">
