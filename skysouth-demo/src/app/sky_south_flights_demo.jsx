@@ -408,7 +408,11 @@ export default function SkySouthFlightsDemo() {
       >
         <DeckGL
           initialViewState={initialViewState}
-          controller={mapActivated ? true : (hasEverActivated ? false : { scrollZoom: false })}
+          controller={
+            isMobile
+              ? (mapActivated ? true : false)
+              : (mapActivated ? true : (hasEverActivated ? false : { scrollZoom: false }))
+          }
           layers={layers}
           onClick={() => {
             // On desktop, clicking anywhere activates map
