@@ -29,6 +29,7 @@ export default function SkySouthFlightsDemo() {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [titleVisible, setTitleVisible] = useState(true);
   const [hoveredAirport, setHoveredAirport] = useState(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   const titles = [
     "22,000 Flights",
@@ -36,6 +37,16 @@ export default function SkySouthFlightsDemo() {
     "22 Years",
     "500 organs transported"
   ];
+
+  // Detect mobile device
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Load all flights at startup
   useEffect(() => {
@@ -366,8 +377,14 @@ export default function SkySouthFlightsDemo() {
   const layers = [dotsLayer, ...(showArcs ? [arcLayer] : [])];
 
   const initialViewState = useMemo(
-    () => ({ longitude: -96, latitude: 36.4, zoom: 4.05, pitch: 40, bearing: -4 }),
-    []
+    () => ({
+      longitude: isMobile ? -83.5 : -96,
+      latitude: isMobile ? 34.5: 36.4,
+      zoom: 4.05,
+      pitch: 40,
+      bearing: -4
+    }),
+    [isMobile]
   );
 
   // Format date as "Month Year"
@@ -382,33 +399,41 @@ export default function SkySouthFlightsDemo() {
   return (
     <div className="relative w-full h-[90vh] bg-black">
       {/* Map & DeckGL */}
-      <DeckGL
-        initialViewState={initialViewState}
-        controller={mapActivated ? true : (hasEverActivated ? false : { scrollZoom: false })}
-        layers={layers}
-        onClick={() => {
-          if (!hasEverActivated) {
-            setHasEverActivated(true);
-          }
-          setMapActivated(true);
-        }}
-        onViewStateChange={({ interactionState }) => {
-          // If user tries to interact with map and hasn't activated yet, enable exploring
-          if (interactionState?.isDragging && !hasEverActivated) {
-            setHasEverActivated(true);
-            setMapActivated(true);
-          }
+      <div
+        style={{
+          pointerEvents: (isMobile && !mapActivated && hasEverActivated) ? 'none' : 'auto',
+          width: '100%',
+          height: '100%'
         }}
       >
-        <Map mapLib={maplibregl} mapStyle={BASEMAP_STYLE} />
-      </DeckGL>
+        <DeckGL
+          initialViewState={initialViewState}
+          controller={mapActivated ? true : (hasEverActivated ? false : { scrollZoom: false })}
+          layers={layers}
+          onClick={() => {
+            if (!hasEverActivated) {
+              setHasEverActivated(true);
+            }
+            setMapActivated(true);
+          }}
+          onViewStateChange={({ interactionState }) => {
+            // If user tries to interact with map and hasn't activated yet, enable exploring
+            if (interactionState?.isDragging && !hasEverActivated) {
+              setHasEverActivated(true);
+              setMapActivated(true);
+            }
+          }}
+        >
+          <Map mapLib={maplibregl} mapStyle={BASEMAP_STYLE} />
+        </DeckGL>
+      </div>
 
       {/* Click to zoom overlay - hidden but functionality remains */}
 
       {/* Cycling Title Overlay */}
-      <div className="absolute top-24 left-24 pointer-events-none z-20">
+      <div className="absolute top-12 md:top-24 left-12 md:left-24 pointer-events-none z-20">
         <h1
-          className="text-5xl md:text-6xl font-bold text-white drop-shadow-2xl transition-opacity duration-500"
+          className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl transition-opacity duration-500"
           style={{
             opacity: titleVisible ? 1 : 0,
           }}
@@ -438,15 +463,19 @@ export default function SkySouthFlightsDemo() {
         </div>
       )}
 
-      {/* Month and Year - Bottom Left */}
-      <div className="absolute bottom-10 left-24 text-white text-2xl font-medium pointer-events-none">
+      {/* Month and Year - Bottom Left on desktop, centered at bottom on mobile */}
+      <div className="absolute bottom-4 md:bottom-10 left-1/2 md:left-24 -translate-x-1/2 md:translate-x-0 text-white text-lg md:text-2xl font-medium pointer-events-none">
         {formatDate(allFlights[Math.min(currentIndex, allFlights.length - 1)])}
       </div>
 
       {/* Explore prompt - changes based on map activation */}
-      <div className="absolute bottom-28 left-1/2 -translate-x-1/2 flex flex-col items-center">
+      <div className="absolute bottom-32 md:bottom-28 left-1/2 -translate-x-1/2 flex flex-col items-center z-10"
+        style={{
+          pointerEvents: 'auto'
+        }}
+      >
         <div
-          className={`text-white/70 text-lg font-light flex items-center space-x-2 cursor-pointer hover:text-white/90 transition-colors ${!hasEverActivated ? 'animate-pulse' : ''}`}
+          className={`text-white/70 text-sm md:text-lg font-light flex items-center space-x-2 cursor-pointer hover:text-white/90 transition-colors ${!hasEverActivated ? 'animate-pulse' : ''}`}
           onClick={() => {
             if (!hasEverActivated) {
               setHasEverActivated(true);
@@ -458,21 +487,21 @@ export default function SkySouthFlightsDemo() {
         >
           {!hasEverActivated ? (
             <>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
               <span>Explore</span>
             </>
           ) : mapActivated ? (
             <>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
               <span>Exploring enabled</span>
             </>
           ) : (
             <>
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
               <span>Exploring disabled</span>
@@ -482,10 +511,14 @@ export default function SkySouthFlightsDemo() {
       </div>
 
       {/* Animation Controls - Bottom Center */}
-      <div ref={buttonContainerRef} className="absolute bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-4">
+      <div ref={buttonContainerRef} className="absolute bottom-16 md:bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-2 md:space-x-4 z-10"
+        style={{
+          pointerEvents: 'auto'
+        }}
+      >
         <button
           onClick={() => setPlaying((p) => !p)}
-          className="w-24 h-12 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
+          className="w-20 h-10 md:w-24 md:h-12 flex items-center justify-center rounded-full bg-white/90 text-gray-800 text-sm md:text-base font-medium shadow hover:bg-white"
           style={{ background: "#d9d9d9ff" }}
           disabled={loading || animationPhase === 'dots-only'}
         >
@@ -499,7 +532,7 @@ export default function SkySouthFlightsDemo() {
             setAnimationPhase('showing');
             setPlaying(true);
           }}
-          className="w-24 h-12 flex items-center justify-center rounded-full bg-white/90 text-gray-800 font-medium shadow hover:bg-white"
+          className="w-20 h-10 md:w-24 md:h-12 flex items-center justify-center rounded-full bg-white/90 text-gray-800 text-sm md:text-base font-medium shadow hover:bg-white"
           style={{ background: "#d9d9d9ff" }}
           disabled={loading}
         >
