@@ -24,7 +24,7 @@ export default function Home() {
       <section id="about" className="bg-gray-50 py-24">
         <div className="max-w-4xl mx-auto text-center px-6">
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-gray-900">
-            Visualizing <span className="text-sky-600">22,000+</span> Flights
+            Visualizing <span className="text-sky-600">12,000+</span> Flights
           </h1>
           <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
             Explore two decades of flight history across the South.  
