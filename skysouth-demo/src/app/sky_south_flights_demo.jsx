@@ -477,14 +477,51 @@ export default function SkySouthFlightsDemo() {
         {formatDate(allFlights[Math.min(currentIndex, allFlights.length - 1)])}
       </div>
 
-      {/* Explore prompt - changes based on map activation */}
-      <div className="absolute bottom-32 md:bottom-28 left-1/2 -translate-x-1/2 flex flex-col items-center z-10"
+      {/* Animation Controls and Explore - Bottom Center */}
+      <div ref={buttonContainerRef} className="absolute bottom-16 md:bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-4 md:space-x-6 z-10"
         style={{
           pointerEvents: 'auto'
         }}
       >
+        {/* Play/Pause Button */}
+        <button
+          onClick={() => setPlaying((p) => !p)}
+          className="text-white hover:text-white/70 transition-colors"
+          disabled={loading || animationPhase === 'dots-only'}
+          aria-label={playing ? "Pause" : "Play"}
+        >
+          {playing ? (
+            <svg className="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+            </svg>
+          ) : (
+            <svg className="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          )}
+        </button>
+
+        {/* Reset Button */}
+        <button
+          onClick={() => {
+            setCurrentIndex(0);
+            setDots([]);
+            setDotPositions(new Set());
+            setAnimationPhase('showing');
+            setPlaying(true);
+          }}
+          className="text-white hover:text-white/70 transition-colors"
+          disabled={loading}
+          aria-label="Reset"
+        >
+          <svg className="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" />
+          </svg>
+        </button>
+
+        {/* Explore Button */}
         <div
-          className={`text-white/70 text-sm md:text-lg font-light flex items-center space-x-2 cursor-pointer hover:text-white/90 transition-colors ${!hasEverActivated ? 'animate-pulse' : ''}`}
+          className="text-white text-sm md:text-base font-light flex items-center space-x-2 cursor-pointer hover:text-white/70 transition-colors whitespace-nowrap"
           onClick={() => {
             if (!hasEverActivated) {
               setHasEverActivated(true);
@@ -496,57 +533,27 @@ export default function SkySouthFlightsDemo() {
         >
           {!hasEverActivated ? (
             <>
-              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
               <span>Explore</span>
             </>
           ) : mapActivated ? (
             <>
-              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
-              <span>Exploring enabled</span>
+              <span>Disable exploring</span>
             </>
           ) : (
             <>
-              <svg className="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
               </svg>
-              <span>Exploring disabled</span>
+              <span>Explore</span>
             </>
           )}
         </div>
-      </div>
-
-      {/* Animation Controls - Bottom Center */}
-      <div ref={buttonContainerRef} className="absolute bottom-16 md:bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-2 md:space-x-4 z-10"
-        style={{
-          pointerEvents: 'auto'
-        }}
-      >
-        <button
-          onClick={() => setPlaying((p) => !p)}
-          className="w-20 h-10 md:w-24 md:h-12 flex items-center justify-center rounded-full bg-white/90 text-gray-800 text-sm md:text-base font-medium shadow hover:bg-white"
-          style={{ background: "#d9d9d9ff" }}
-          disabled={loading || animationPhase === 'dots-only'}
-        >
-          {playing ? "Pause" : "Play"}
-        </button>
-        <button
-          onClick={() => {
-            setCurrentIndex(0);
-            setDots([]);
-            setDotPositions(new Set());
-            setAnimationPhase('showing');
-            setPlaying(true);
-          }}
-          className="w-20 h-10 md:w-24 md:h-12 flex items-center justify-center rounded-full bg-white/90 text-gray-800 text-sm md:text-base font-medium shadow hover:bg-white"
-          style={{ background: "#d9d9d9ff" }}
-          disabled={loading}
-        >
-          Reset
-        </button>
       </div>
     </div>
   );
