@@ -1,0 +1,1181 @@
+{
+  "month": "2020-03",
+  "flights": [
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 24.6979,
+      "dlng": -77.7956,
+      "meta": {
+        "o": "FXE",
+        "d": "MYAF"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-02 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 24.6979,
+      "olng": -77.7956,
+      "dlat": 24.3153,
+      "dlng": -75.4523,
+      "meta": {
+        "o": "MYAF",
+        "d": "MYCB"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-03 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 24.3153,
+      "olng": -75.4523,
+      "dlat": 25.039,
+      "dlng": -77.4662,
+      "meta": {
+        "o": "MYCB",
+        "d": "MYNN"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 25.039,
+      "olng": -77.4662,
+      "dlat": 26.5114,
+      "dlng": -77.0835,
+      "meta": {
+        "o": "MYNN",
+        "d": "MYAM"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-05 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 26.5114,
+      "olng": -77.0835,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "MYAM",
+        "d": "FXE"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-06 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 27.91544,
+      "dlng": -82.44939,
+      "meta": {
+        "o": "RDU",
+        "d": "TPF"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 27.91544,
+      "olng": -82.44939,
+      "dlat": 21.7736,
+      "dlng": -72.2659,
+      "meta": {
+        "o": "TPF",
+        "d": "MBPV"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 21.7736,
+      "olng": -72.2659,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "MBPV",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2008-03-17 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "RDU",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-03-17 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.364,
+      "olng": -64.6787,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "TXKF",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-03-19 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-03-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 43.6772,
+      "dlng": -79.6306,
+      "meta": {
+        "o": "RDU",
+        "d": "CYYZ"
+      },
+      "tailNum": "208TC",
+      "date": "2008-03-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.6772,
+      "olng": -79.6306,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "CYYZ",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-03-13 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "208TC",
+      "date": "2008-03-13 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "GSO",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-07 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "RDU",
+        "d": "RIC"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-07 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "RIC",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-07 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.364,
+      "olng": -64.6787,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "TXKF",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-10 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-05-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 40.2,
+      "dlng": -74.1,
+      "meta": {
+        "o": "CHS",
+        "d": "BLM"
+      },
+      "tailNum": "N847G",
+      "date": "2008-05-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 40.2,
+      "olng": -74.1,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "BLM",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-05-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-06-02 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "CHS",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-06-02 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.364,
+      "olng": -64.6787,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "TXKF",
+        "d": "RIC"
+      },
+      "tailNum": "N847G",
+      "date": "2008-06-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "N847G",
+      "date": "2008-06-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 18.33731,
+      "dlng": -64.97333,
+      "meta": {
+        "o": "BUY",
+        "d": "TIST"
+      },
+      "tailNum": "N847G",
+      "date": "2013-02-08 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 18.33731,
+      "olng": -64.97333,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "TIST",
+        "d": "FXE"
+      },
+      "tailNum": "N847G",
+      "date": "2013-02-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-29 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 42.19053,
+      "dlng": -71.17294,
+      "meta": {
+        "o": "RDU",
+        "d": "OWD"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-29 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 42.19053,
+      "olng": -71.17294,
+      "dlat": 43.1736,
+      "dlng": -79.935,
+      "meta": {
+        "o": "OWD",
+        "d": "CYHM"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-29 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.1736,
+      "olng": -79.935,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "CYHM",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-29 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 43.6772,
+      "dlng": -79.6306,
+      "meta": {
+        "o": "RDU",
+        "d": "CYYZ"
+      },
+      "tailNum": "N847G",
+      "date": "2013-12-10 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.6772,
+      "olng": -79.6306,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "CYYZ",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2013-12-10 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 40.77725,
+      "dlng": -73.87261,
+      "meta": {
+        "o": "RDU",
+        "d": "LGA"
+      },
+      "tailNum": "N847G",
+      "date": "2013-12-20 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 40.77725,
+      "dlng": -73.87261,
+      "meta": {
+        "o": "RDU",
+        "d": "LGA"
+      },
+      "tailNum": "N847G",
+      "date": "2014-03-25 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 40.77725,
+      "olng": -73.87261,
+      "dlat": 43.6772,
+      "dlng": -79.6306,
+      "meta": {
+        "o": "LGA",
+        "d": "CYYZ"
+      },
+      "tailNum": "N847G",
+      "date": "2014-03-25 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.6772,
+      "olng": -79.6306,
+      "dlat": 40.77725,
+      "dlng": -73.87261,
+      "meta": {
+        "o": "CYYZ",
+        "d": "LGA"
+      },
+      "tailNum": "N847G",
+      "date": "2014-03-25 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 43.1736,
+      "dlng": -79.935,
+      "meta": {
+        "o": "RDU",
+        "d": "CYHM"
+      },
+      "tailNum": "N847G",
+      "date": "2014-11-05 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.1736,
+      "olng": -79.935,
+      "dlat": 42.36294,
+      "dlng": -71.00639,
+      "meta": {
+        "o": "CYHM",
+        "d": "BOS"
+      },
+      "tailNum": "N847G",
+      "date": "2014-11-06 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.6,
+      "dlng": -79.1,
+      "meta": {
+        "o": "BUY",
+        "d": "TTA"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-01 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.6,
+      "olng": -79.1,
+      "dlat": 32.7,
+      "dlng": -80.0,
+      "meta": {
+        "o": "TTA",
+        "d": "JZI"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-01 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 32.7,
+      "olng": -80.0,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "JZI",
+        "d": "RDU"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-01 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 35.6,
+      "dlng": -79.1,
+      "meta": {
+        "o": "RDU",
+        "d": "TTA"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-01 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.6,
+      "olng": -79.1,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TTA",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-02 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "BUY",
+        "d": "GSO"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-03 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 35.03519,
+      "dlng": -85.20356,
+      "meta": {
+        "o": "GSO",
+        "d": "CHA"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-03 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.03519,
+      "olng": -85.20356,
+      "dlat": 36.10133,
+      "dlng": -79.94112,
+      "meta": {
+        "o": "CHA",
+        "d": "GSO"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-03 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 35.6,
+      "dlng": -79.1,
+      "meta": {
+        "o": "GSO",
+        "d": "TTA"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-03 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.6,
+      "olng": -79.1,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "TTA",
+        "d": "RDU"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-05 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 35.21375,
+      "dlng": -80.94906,
+      "meta": {
+        "o": "RDU",
+        "d": "CLT"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-05 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.21375,
+      "olng": -80.94906,
+      "dlat": 32.56472,
+      "dlng": -82.98497,
+      "meta": {
+        "o": "CLT",
+        "d": "DBN"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-05 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 32.56472,
+      "olng": -82.98497,
+      "dlat": 33.97809,
+      "dlng": -83.96236,
+      "meta": {
+        "o": "DBN",
+        "d": "LZU"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-05 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 33.97809,
+      "olng": -83.96236,
+      "dlat": 32.22449,
+      "dlng": -80.6974,
+      "meta": {
+        "o": "LZU",
+        "d": "HXD"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-05 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 32.22449,
+      "olng": -80.6974,
+      "dlat": 35.6,
+      "dlng": -79.1,
+      "meta": {
+        "o": "HXD",
+        "d": "TTA"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-05 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 35.6,
+      "olng": -79.1,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TTA",
+        "d": "BUY"
+      },
+      "tailNum": "94KM",
+      "date": "2020-03-11 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "94KM Baron"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "GSO",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-03-06 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 34.27114,
+      "dlng": -77.90289,
+      "meta": {
+        "o": "BUY",
+        "d": "ILM"
+      },
+      "tailNum": "",
+      "date": "2020-03-07 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 34.27114,
+      "olng": -77.90289,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "ILM",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2020-03-07 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "IAD",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-03-07 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2020-03-08 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 38.9,
+      "dlng": -77.5,
+      "meta": {
+        "o": "RDU",
+        "d": "IAD"
+      },
+      "tailNum": "",
+      "date": "2020-03-08 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 38.9,
+      "olng": -77.5,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "IAD",
+        "d": "FXE"
+      },
+      "tailNum": "",
+      "date": "2020-03-09 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "FXE",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2020-03-09 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-03-09 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 39.10333,
+      "dlng": -84.41861,
+      "meta": {
+        "o": "BUY",
+        "d": "LUK"
+      },
+      "tailNum": "",
+      "date": "2020-03-12 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.10333,
+      "olng": -84.41861,
+      "dlat": 35.21375,
+      "dlng": -80.94906,
+      "meta": {
+        "o": "LUK",
+        "d": "CLT"
+      },
+      "tailNum": "",
+      "date": "2020-03-12 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.21375,
+      "olng": -80.94906,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "CLT",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-03-12 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 39.17573,
+      "dlng": -76.66899,
+      "meta": {
+        "o": "BUY",
+        "d": "BWI"
+      },
+      "tailNum": "",
+      "date": "2020-03-13 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 39.17573,
+      "olng": -76.66899,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BWI",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2020-03-14 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-03-14 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 33.93884,
+      "dlng": -81.11954,
+      "meta": {
+        "o": "BUY",
+        "d": "CAE"
+      },
+      "tailNum": "",
+      "date": "2020-03-20 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 33.93884,
+      "olng": -81.11954,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "CAE",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2020-03-20 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-03-21 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 36.19839,
+      "dlng": -95.88811,
+      "meta": {
+        "o": "BUY",
+        "d": "TUL"
+      },
+      "tailNum": "",
+      "date": "2020-03-28 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.19839,
+      "olng": -95.88811,
+      "dlat": 32.11607,
+      "dlng": -110.94101,
+      "meta": {
+        "o": "TUL",
+        "d": "TUS"
+      },
+      "tailNum": "",
+      "date": "2020-03-28 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 32.11607,
+      "olng": -110.94101,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "TUS",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-03-29 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "",
+      "date": "2020-03-30 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "CHS",
+        "d": "RDU"
+      },
+      "tailNum": "",
+      "date": "2020-03-31 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "",
+      "date": "2020-03-31 00:00:00",
+      "source_file": "Flight Logs 2020.xlsx",
+      "source_sheet": "242ML CJ"
+    }
+  ]
+}
