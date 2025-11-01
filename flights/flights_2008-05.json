@@ -1,0 +1,47 @@
+{
+  "month": "2008-05",
+  "flights": [
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-05-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 40.2,
+      "dlng": -74.1,
+      "meta": {
+        "o": "CHS",
+        "d": "BLM"
+      },
+      "tailNum": "N847G",
+      "date": "2008-05-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 40.2,
+      "olng": -74.1,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "BLM",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-05-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "month": "2014-11",
+  "flights": [
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 43.1736,
+      "dlng": -79.935,
+      "meta": {
+        "o": "RDU",
+        "d": "CYHM"
+      },
+      "tailNum": "N847G",
+      "date": "2014-11-05 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.1736,
+      "olng": -79.935,
+      "dlat": 42.36294,
+      "dlng": -71.00639,
+      "meta": {
+        "o": "CYHM",
+        "d": "BOS"
+      },
+      "tailNum": "N847G",
+      "date": "2014-11-06 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    }
+  ]
+}

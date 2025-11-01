@@ -1,0 +1,33 @@
+{
+  "month": "2013-02",
+  "flights": [
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 18.33731,
+      "dlng": -64.97333,
+      "meta": {
+        "o": "BUY",
+        "d": "TIST"
+      },
+      "tailNum": "N847G",
+      "date": "2013-02-08 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 18.33731,
+      "olng": -64.97333,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "TIST",
+        "d": "FXE"
+      },
+      "tailNum": "N847G",
+      "date": "2013-02-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    }
+  ]
+}

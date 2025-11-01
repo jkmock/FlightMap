@@ -1,0 +1,75 @@
+{
+  "month": "2008-02",
+  "flights": [
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 27.91544,
+      "dlng": -82.44939,
+      "meta": {
+        "o": "RDU",
+        "d": "TPF"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 27.91544,
+      "olng": -82.44939,
+      "dlat": 21.7736,
+      "dlng": -72.2659,
+      "meta": {
+        "o": "TPF",
+        "d": "MBPV"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 21.7736,
+      "olng": -72.2659,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "MBPV",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    }
+  ]
+}

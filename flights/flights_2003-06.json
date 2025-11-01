@@ -1,0 +1,89 @@
+{
+  "month": "2003-06",
+  "flights": [
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 24.6979,
+      "dlng": -77.7956,
+      "meta": {
+        "o": "FXE",
+        "d": "MYAF"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-02 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 24.6979,
+      "olng": -77.7956,
+      "dlat": 24.3153,
+      "dlng": -75.4523,
+      "meta": {
+        "o": "MYAF",
+        "d": "MYCB"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-03 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 24.3153,
+      "olng": -75.4523,
+      "dlat": 25.039,
+      "dlng": -77.4662,
+      "meta": {
+        "o": "MYCB",
+        "d": "MYNN"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 25.039,
+      "olng": -77.4662,
+      "dlat": 26.5114,
+      "dlng": -77.0835,
+      "meta": {
+        "o": "MYNN",
+        "d": "MYAM"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-05 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 26.5114,
+      "olng": -77.0835,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "MYAM",
+        "d": "FXE"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-06 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    }
+  ]
+}

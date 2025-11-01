@@ -1,0 +1,47 @@
+{
+  "month": "2014-03",
+  "flights": [
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 40.77725,
+      "dlng": -73.87261,
+      "meta": {
+        "o": "RDU",
+        "d": "LGA"
+      },
+      "tailNum": "N847G",
+      "date": "2014-03-25 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 40.77725,
+      "olng": -73.87261,
+      "dlat": 43.6772,
+      "dlng": -79.6306,
+      "meta": {
+        "o": "LGA",
+        "d": "CYYZ"
+      },
+      "tailNum": "N847G",
+      "date": "2014-03-25 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.6772,
+      "olng": -79.6306,
+      "dlat": 40.77725,
+      "dlng": -73.87261,
+      "meta": {
+        "o": "CYYZ",
+        "d": "LGA"
+      },
+      "tailNum": "N847G",
+      "date": "2014-03-25 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    }
+  ]
+}

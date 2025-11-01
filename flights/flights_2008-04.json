@@ -1,0 +1,61 @@
+{
+  "month": "2008-04",
+  "flights": [
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "GSO",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-07 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "RDU",
+        "d": "RIC"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-07 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "RIC",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-07 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.364,
+      "olng": -64.6787,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "TXKF",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-10 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    }
+  ]
+}
