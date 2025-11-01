@@ -275,11 +275,13 @@
       "source": "carto",
       "source-layer": "boundary",
       "filter": ["all", ["==", "admin_level", 4], ["==", "maritime", 0]],
-      "minzoom": 4,
+      "minzoom": 0,
       "paint": {
         "line-color": "#869590",
         "line-width": {
           "stops": [
+            [0, 0.5],
+            [2, 0.8],
             [4, 1],
             [6, 1.5],
             [8, 2]

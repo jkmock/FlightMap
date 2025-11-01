@@ -46,7 +46,6 @@
       "type": "fill",
       "source": "carto",
       "source-layer": "park",
-      "minzoom": 9,
       "filter": ["all", ["==", "class", "national_park"]],
       "layout": { "visibility": "visible" },
       "paint": {
@@ -187,11 +186,13 @@
       "type": "line",
       "source": "carto",
       "source-layer": "boundary",
-      "minzoom": 4,
+      "minzoom": 0,
       "filter": ["all", ["==", "admin_level", 4], ["==", "maritime", 0]],
       "paint": {
         "line-color": {
           "stops": [
+            [0, "rgba(103, 103, 114, 1)"],
+            [2, "rgba(103, 103, 114, 1)"],
             [4, "rgba(103, 103, 114, 1)"],
             [5, "rgba(103, 103, 114, 1)"],
             [6, "rgba(103, 103, 114, 1)"]
@@ -199,6 +200,8 @@
         },
         "line-width": {
           "stops": [
+            [0, 0.3],
+            [2, 0.4],
             [4, 0.5],
             [7, 1],
             [8, 1],
