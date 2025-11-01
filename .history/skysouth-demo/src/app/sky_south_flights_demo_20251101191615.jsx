@@ -49,15 +49,6 @@ export default function SkySouthFlightsDemo() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Cleanup airport tooltip timeout
-  useEffect(() => {
-    return () => {
-      if (airportTooltipTimeout.current) {
-        clearTimeout(airportTooltipTimeout.current);
-      }
-    };
-  }, []);
-
   // Load all flights at startup
   useEffect(() => {
     const loadAllFlights = async () => {
@@ -243,7 +234,6 @@ export default function SkySouthFlightsDemo() {
   // Auto-play when flights finish loading and buttons are visible
   const hasAutoStarted = useRef(false);
   const buttonContainerRef = useRef(null);
-  const airportTooltipTimeout = useRef(null);
 
   useEffect(() => {
     if (!loading && allFlights.length > 0 && !hasAutoStarted.current) {
@@ -429,25 +419,12 @@ export default function SkySouthFlightsDemo() {
     radiusUnits: 'meters',
     pickable: true,
     onHover: info => {
-      // Clear any existing timeout
-      if (airportTooltipTimeout.current) {
-        clearTimeout(airportTooltipTimeout.current);
-        airportTooltipTimeout.current = null;
-      }
-
       if (info.object) {
         setHoveredAirport({
           code: info.object.code,
           x: info.x,
           y: info.y
         });
-
-        // On mobile, automatically hide after 3 seconds
-        if (isMobile) {
-          airportTooltipTimeout.current = setTimeout(() => {
-            setHoveredAirport(null);
-          }, 3000);
-        }
       } else {
         setHoveredAirport(null);
       }
@@ -460,7 +437,7 @@ export default function SkySouthFlightsDemo() {
     () => ({
       longitude: isMobile ? -83.5 : -96,
       latitude: isMobile ? 34.5 : 36.4,
-      zoom: isMobile ? 4 : 4.05,
+      zoom: isMobile ? 3.95 : 4.05,
       pitch: 40,
       bearing: 0
     }),
@@ -510,15 +487,6 @@ export default function SkySouthFlightsDemo() {
             }
           }}
           onViewStateChange={({ interactionState }) => {
-            // On mobile, hide airport tooltip when map is moved or zoomed
-            if (isMobile && (interactionState?.isDragging || interactionState?.isZooming || interactionState?.isPanning)) {
-              if (airportTooltipTimeout.current) {
-                clearTimeout(airportTooltipTimeout.current);
-                airportTooltipTimeout.current = null;
-              }
-              setHoveredAirport(null);
-            }
-
             // If user tries to interact with map and hasn't activated yet, enable exploring
             // Only on desktop - mobile requires clicking explore button
             if (!isMobile && interactionState?.isDragging && !hasEverActivated) {
@@ -550,6 +518,19 @@ export default function SkySouthFlightsDemo() {
           {titles[currentTitleIndex]}
         </h1>
       </div>
+
+      {/* Exit Explore Mode Button */}
+      {mapActivated && (
+        <button
+          onClick={() => setMapActivated(false)}
+          className="absolute top-12 md:top-24 right-12 md:right-24 z-20 text-white hover:text-white/70 transition-all duration-300 pointer-events-auto"
+          aria-label="Exit explore mode"
+        >
+          <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      )}
 
       {/* Airport Code Tooltip */}
       {hoveredAirport && hoveredAirport.code && (
@@ -624,7 +605,7 @@ export default function SkySouthFlightsDemo() {
 
         {/* Explore Button */}
         <div
-          className={`text-white text-sm md:text-base font-light flex items-center cursor-pointer hover:text-white/70 transition-colors whitespace-nowrap ${mapActivated ? 'space-x-1' : 'space-x-2'}`}
+          className="text-white text-sm md:text-base font-light flex items-center space-x-2 cursor-pointer hover:text-white/70 transition-colors whitespace-nowrap"
           onClick={() => {
             if (!hasEverActivated) {
               setHasEverActivated(true);
