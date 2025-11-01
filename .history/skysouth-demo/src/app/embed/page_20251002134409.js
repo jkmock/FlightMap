@@ -4,6 +4,8 @@ import SkySouthFlightsDemo from "../sky_south_flights_demo";
 
 export default function EmbedMap() {
   return (
-    <SkySouthFlightsDemo />
+    <div className="h-screen w-screen">
+      <SkySouthFlightsDemo />
+    </div>
   );
 }

@@ -11,7 +11,7 @@ import { ArcLayer, ScatterplotLayer } from "@deck.gl/layers";
 import { COORDINATE_SYSTEM } from "@deck.gl/core";
 
 // Tokenless light basemap
-const BASEMAP_STYLE = "/styles/darkblue.json";
+const BASEMAP_STYLE = "/styles/topo.json";
 
 export default function SkySouthFlightsDemo() {
   const [allFlights, setAllFlights] = useState([]);
@@ -397,18 +397,13 @@ export default function SkySouthFlightsDemo() {
   };
 
   return (
-    <div className="relative w-full bg-black" style={{ height: '100vh', width: '100vw' }}>
+    <div className="relative w-full h-[90vh] bg-black">
       {/* Map & DeckGL */}
       <div
         style={{
           pointerEvents: (isMobile && !mapActivated) ? 'none' : 'auto',
           width: '100%',
-          height: '100%',
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0
+          height: '100%'
         }}
       >
         <DeckGL
@@ -437,14 +432,8 @@ export default function SkySouthFlightsDemo() {
               setMapActivated(true);
             }
           }}
-          style={{ width: '100%', height: '100%' }}
         >
-          <Map
-            mapLib={maplibregl}
-            mapStyle={BASEMAP_STYLE}
-            style={{ width: '100%', height: '100%' }}
-            attributionControl={false}
-          />
+          <Map mapLib={maplibregl} mapStyle={BASEMAP_STYLE} />
         </DeckGL>
       </div>
 
@@ -461,19 +450,6 @@ export default function SkySouthFlightsDemo() {
           {titles[currentTitleIndex]}
         </h1>
       </div>
-
-      {/* Exit Explore Mode Button */}
-      {mapActivated && (
-        <button
-          onClick={() => setMapActivated(false)}
-          className="absolute top-12 md:top-24 right-12 md:right-24 z-20 text-white hover:text-white/70 transition-all duration-300 pointer-events-auto"
-          aria-label="Exit explore mode"
-        >
-          <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-          </svg>
-        </button>
-      )}
 
       {/* Airport Code Tooltip */}
       {hoveredAirport && hoveredAirport.code && (

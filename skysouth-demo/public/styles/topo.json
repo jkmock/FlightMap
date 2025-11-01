@@ -1,0 +1,148 @@
+{
+  "version": 8,
+  "name": "OSM Topo",
+  "sources": {
+    "carto": {
+      "type": "vector",
+      "url": "https://tiles.basemaps.cartocdn.com/vector/carto.streets/v1/tiles.json"
+    }
+  },
+  "sprite": "https://tiles.basemaps.cartocdn.com/gl/positron-gl-style/sprite",
+  "glyphs": "https://tiles.basemaps.cartocdn.com/fonts/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "#F2EFE9"
+      }
+    },
+    {
+      "id": "landcover_wood",
+      "type": "fill",
+      "source": "carto",
+      "source-layer": "landcover",
+      "filter": ["==", "class", "wood"],
+      "paint": {
+        "fill-color": "#D4E4BC",
+        "fill-opacity": 0.7
+      }
+    },
+    {
+      "id": "landcover_grass",
+      "type": "fill",
+      "source": "carto",
+      "source-layer": "landcover",
+      "filter": ["==", "class", "grass"],
+      "paint": {
+        "fill-color": "#E6F2D3",
+        "fill-opacity": 0.5
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "carto",
+      "source-layer": "water",
+      "paint": {
+        "fill-color": "#AAD3DF"
+      }
+    },
+    {
+      "id": "waterway",
+      "type": "line",
+      "source": "carto",
+      "source-layer": "waterway",
+      "paint": {
+        "line-color": "#AAD3DF",
+        "line-width": 1.5
+      }
+    },
+    {
+      "id": "boundary_state",
+      "type": "line",
+      "source": "carto",
+      "source-layer": "boundary",
+      "filter": ["==", "admin_level", 4],
+      "paint": {
+        "line-color": "#9E9E9E",
+        "line-dasharray": [2, 2],
+        "line-width": 1
+      }
+    },
+    {
+      "id": "boundary_country",
+      "type": "line",
+      "source": "carto",
+      "source-layer": "boundary",
+      "filter": ["==", "admin_level", 2],
+      "paint": {
+        "line-color": "#6E6E6E",
+        "line-width": 2
+      }
+    },
+    {
+      "id": "road_minor",
+      "type": "line",
+      "source": "carto",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "minor", "service"],
+      "paint": {
+        "line-color": "#FFFFFF",
+        "line-width": {
+          "stops": [[12, 0.5], [14, 2], [16, 4]]
+        }
+      }
+    },
+    {
+      "id": "road_major",
+      "type": "line",
+      "source": "carto",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "primary", "secondary", "tertiary"],
+      "paint": {
+        "line-color": "#FFC859",
+        "line-width": {
+          "stops": [[10, 1], [12, 2], [14, 3], [16, 6]]
+        }
+      }
+    },
+    {
+      "id": "road_trunk",
+      "type": "line",
+      "source": "carto",
+      "source-layer": "transportation",
+      "filter": ["==", "class", "trunk"],
+      "paint": {
+        "line-color": "#FFA859",
+        "line-width": {
+          "stops": [[10, 1.5], [12, 2.5], [14, 4], [16, 8]]
+        }
+      }
+    },
+    {
+      "id": "road_motorway",
+      "type": "line",
+      "source": "carto",
+      "source-layer": "transportation",
+      "filter": ["==", "class", "motorway"],
+      "paint": {
+        "line-color": "#E892A2",
+        "line-width": {
+          "stops": [[8, 1], [10, 2], [12, 3], [14, 5], [16, 10]]
+        }
+      }
+    },
+    {
+      "id": "building",
+      "type": "fill",
+      "source": "carto",
+      "source-layer": "building",
+      "minzoom": 14,
+      "paint": {
+        "fill-color": "#D9D9D9",
+        "fill-opacity": 0.7
+      }
+    }
+  ]
+}

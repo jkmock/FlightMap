@@ -43,7 +43,7 @@ export default function Home() {
       </section>
 
       {/* Map Section */}
-      <section id="map" className="relative">
+      <section id="map" className="relative" style={{ height: '90vh', minHeight: '600px' }}>
         <SkySouthFlightsDemo />
       </section>
 
