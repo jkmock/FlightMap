@@ -11,7 +11,7 @@ import { ArcLayer, ScatterplotLayer } from "@deck.gl/layers";
 import { COORDINATE_SYSTEM } from "@deck.gl/core";
 
 // Tokenless light basemap
-const BASEMAP_STYLE = "/styles/darkblue.json";
+const BASEMAP_STYLE = "/styles/satellite.json";
 
 export default function SkySouthFlightsDemo() {
   const [allFlights, setAllFlights] = useState([]);
@@ -30,12 +30,13 @@ export default function SkySouthFlightsDemo() {
   const [titleVisible, setTitleVisible] = useState(true);
   const [hoveredAirport, setHoveredAirport] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [displayDate, setDisplayDate] = useState({ month: 1, year: 2020 });
 
   const titles = [
-    "22,000 Flights",
-    "310 Airports",
+    "22,000+ Flights",
+    "300+ Airports",
     "22 Years",
-    "500 organs transported"
+    "1000+ Organs Transported"
   ];
 
   // Detect mobile device
@@ -133,6 +134,12 @@ export default function SkySouthFlightsDemo() {
 
         console.log(`Unique routes after deduplication: ${uniqueFlights.length} (removed ${allFlightData.length - uniqueFlights.length} duplicate routes)`);
         setAllFlights(uniqueFlights);
+
+        // Initialize display date to first flight's date
+        if (uniqueFlights.length > 0) {
+          setDisplayDate({ month: uniqueFlights[0].month, year: uniqueFlights[0].year });
+        }
+
         setLoading(false);
       } catch (err) {
         console.error('Failed to load flights data', err);
@@ -154,6 +161,56 @@ export default function SkySouthFlightsDemo() {
       setUniqueAirports(airportSet.size);
     }
   }, [allFlights]);
+
+  // Update display date based on current flight (only during showing phase)
+  useEffect(() => {
+    if (allFlights.length === 0 || animationPhase !== 'showing') return;
+
+    const flightIndex = Math.min(currentIndex, allFlights.length - 1);
+    const currentFlight = allFlights[flightIndex];
+
+    if (currentFlight) {
+      setDisplayDate({ month: currentFlight.month, year: currentFlight.year });
+    }
+  }, [currentIndex, allFlights, animationPhase]);
+
+  // Continue incrementing date after flights end until current month/year
+  useEffect(() => {
+    if (animationPhase !== 'removing' || !playing || allFlights.length === 0) return;
+
+    // Set to last flight's date when entering removing phase
+    const lastFlight = allFlights[allFlights.length - 1];
+    if (lastFlight) {
+      setDisplayDate({ month: lastFlight.month, year: lastFlight.year });
+    }
+
+    const now = new Date();
+    const currentMonth = now.getMonth() + 1; // 1-12
+    const currentYear = now.getFullYear();
+
+    const interval = setInterval(() => {
+      setDisplayDate(prevDate => {
+        // Check if we've reached current month/year
+        if (prevDate.year > currentYear ||
+            (prevDate.year === currentYear && prevDate.month >= currentMonth)) {
+          return prevDate; // Stop incrementing
+        }
+
+        // Increment month
+        let newMonth = prevDate.month + 1;
+        let newYear = prevDate.year;
+
+        if (newMonth > 12) {
+          newMonth = 1;
+          newYear += 1;
+        }
+
+        return { month: newMonth, year: newYear };
+      });
+    }, 15); // Same speed as animation
+
+    return () => clearInterval(interval);
+  }, [animationPhase, playing, allFlights]);
 
   // Cycling title animation
   useEffect(() => {
@@ -348,8 +405,8 @@ export default function SkySouthFlightsDemo() {
     getTargetPosition: d => [d.dlng, d.dlat],
     getHeight: 0.2,
     greatCircle: true,
-    getSourceColor: [194, 232, 255],
-    getTargetColor: [194, 232, 255],
+    getSourceColor: [220, 235, 230],
+    getTargetColor: [220, 235, 230],
     getWidth: 2,
   });
 
@@ -379,21 +436,21 @@ export default function SkySouthFlightsDemo() {
   const initialViewState = useMemo(
     () => ({
       longitude: isMobile ? -83.5 : -96,
-      latitude: isMobile ? 34.5: 36.4,
+      latitude: isMobile ? 34.5 : 36.4,
       zoom: 4.05,
       pitch: 40,
-      bearing: -4
+      bearing: 0
     }),
     [isMobile]
   );
 
   // Format date as "Month Year"
-  const formatDate = (flight) => {
-    if (!flight) return 'Loading...';
+  const formatDate = (dateObj) => {
+    if (!dateObj || !dateObj.month || !dateObj.year) return 'Loading...';
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
       'July', 'August', 'September', 'October', 'November', 'December'];
-    const monthIndex = (flight.month || 1) - 1;
-    return `${monthNames[monthIndex]} ${flight.year}`;
+    const monthIndex = (dateObj.month || 1) - 1;
+    return `${monthNames[monthIndex]} ${dateObj.year}`;
   };
 
   return (
@@ -453,7 +510,7 @@ export default function SkySouthFlightsDemo() {
       {/* Cycling Title Overlay */}
       <div className="absolute top-12 md:top-24 left-12 md:left-24 pointer-events-none z-20">
         <h1
-          className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl transition-opacity duration-500"
+          className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl transition-opacity duration-500"
           style={{
             opacity: titleVisible ? 1 : 0,
           }}
@@ -498,7 +555,7 @@ export default function SkySouthFlightsDemo() {
 
       {/* Month and Year - Bottom Left on desktop, centered at bottom on mobile */}
       <div className="absolute bottom-4 md:bottom-10 left-1/2 md:left-24 -translate-x-1/2 md:translate-x-0 text-white text-lg md:text-2xl font-medium pointer-events-none">
-        {formatDate(allFlights[Math.min(currentIndex, allFlights.length - 1)])}
+        {formatDate(displayDate)}
       </div>
 
       {/* Animation Controls and Explore - Bottom Center */}
@@ -533,6 +590,9 @@ export default function SkySouthFlightsDemo() {
             setDotPositions(new Set());
             setAnimationPhase('showing');
             setPlaying(true);
+            if (allFlights.length > 0) {
+              setDisplayDate({ month: allFlights[0].month, year: allFlights[0].year });
+            }
           }}
           className="text-white hover:text-white/70 transition-colors"
           disabled={loading}

@@ -4,6 +4,622 @@
     {
       "olat": 36.04973,
       "olng": -79.47301,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "BUY",
+        "d": "FXE"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 26.2,
+      "olng": -80.2,
+      "dlat": 24.6979,
+      "dlng": -77.7956,
+      "meta": {
+        "o": "FXE",
+        "d": "MYAF"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-02 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 24.6979,
+      "olng": -77.7956,
+      "dlat": 24.3153,
+      "dlng": -75.4523,
+      "meta": {
+        "o": "MYAF",
+        "d": "MYCB"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-03 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 24.3153,
+      "olng": -75.4523,
+      "dlat": 25.039,
+      "dlng": -77.4662,
+      "meta": {
+        "o": "MYCB",
+        "d": "MYNN"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 25.039,
+      "olng": -77.4662,
+      "dlat": 26.5114,
+      "dlng": -77.0835,
+      "meta": {
+        "o": "MYNN",
+        "d": "MYAM"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-05 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 26.5114,
+      "olng": -77.0835,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "MYAM",
+        "d": "FXE"
+      },
+      "tailNum": "N95KM",
+      "date": "2003-06-06 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 27.91544,
+      "dlng": -82.44939,
+      "meta": {
+        "o": "RDU",
+        "d": "TPF"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 27.91544,
+      "olng": -82.44939,
+      "dlat": 21.7736,
+      "dlng": -72.2659,
+      "meta": {
+        "o": "TPF",
+        "d": "MBPV"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-01 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 21.7736,
+      "olng": -72.2659,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "MBPV",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "208TC",
+      "date": "2008-02-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2008-03-17 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "RDU",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-03-17 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.364,
+      "olng": -64.6787,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "TXKF",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-03-19 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-03-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 43.6772,
+      "dlng": -79.6306,
+      "meta": {
+        "o": "RDU",
+        "d": "CYYZ"
+      },
+      "tailNum": "208TC",
+      "date": "2008-03-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.6772,
+      "olng": -79.6306,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "CYYZ",
+        "d": "RDU"
+      },
+      "tailNum": "208TC",
+      "date": "2008-03-13 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RDU",
+        "d": "BUY"
+      },
+      "tailNum": "208TC",
+      "date": "2008-03-13 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.10133,
+      "olng": -79.94112,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "GSO",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-07 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "RDU",
+        "d": "RIC"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-07 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "RIC",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-07 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.364,
+      "olng": -64.6787,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "TXKF",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-04-10 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-05-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 40.2,
+      "dlng": -74.1,
+      "meta": {
+        "o": "CHS",
+        "d": "BLM"
+      },
+      "tailNum": "N847G",
+      "date": "2008-05-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 40.2,
+      "olng": -74.1,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "BLM",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-05-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 32.89864,
+      "dlng": -80.04053,
+      "meta": {
+        "o": "BUY",
+        "d": "CHS"
+      },
+      "tailNum": "N847G",
+      "date": "2008-06-02 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.89864,
+      "olng": -80.04053,
+      "dlat": 32.364,
+      "dlng": -64.6787,
+      "meta": {
+        "o": "CHS",
+        "d": "TXKF"
+      },
+      "tailNum": "N847G",
+      "date": "2008-06-02 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 32.364,
+      "olng": -64.6787,
+      "dlat": 37.50518,
+      "dlng": -77.31974,
+      "meta": {
+        "o": "TXKF",
+        "d": "RIC"
+      },
+      "tailNum": "N847G",
+      "date": "2008-06-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 37.50518,
+      "olng": -77.31974,
+      "dlat": 36.04973,
+      "dlng": -79.47301,
+      "meta": {
+        "o": "RIC",
+        "d": "BUY"
+      },
+      "tailNum": "N847G",
+      "date": "2008-06-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 18.33731,
+      "dlng": -64.97333,
+      "meta": {
+        "o": "BUY",
+        "d": "TIST"
+      },
+      "tailNum": "N847G",
+      "date": "2013-02-08 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 18.33731,
+      "olng": -64.97333,
+      "dlat": 26.2,
+      "dlng": -80.2,
+      "meta": {
+        "o": "TIST",
+        "d": "FXE"
+      },
+      "tailNum": "N847G",
+      "date": "2013-02-12 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-04 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "BUY",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-29 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 42.19053,
+      "dlng": -71.17294,
+      "meta": {
+        "o": "RDU",
+        "d": "OWD"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-29 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 42.19053,
+      "olng": -71.17294,
+      "dlat": 43.1736,
+      "dlng": -79.935,
+      "meta": {
+        "o": "OWD",
+        "d": "CYHM"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-29 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.1736,
+      "olng": -79.935,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "CYHM",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2013-03-29 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 43.6772,
+      "dlng": -79.6306,
+      "meta": {
+        "o": "RDU",
+        "d": "CYYZ"
+      },
+      "tailNum": "N847G",
+      "date": "2013-12-10 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.6772,
+      "olng": -79.6306,
+      "dlat": 35.87764,
+      "dlng": -78.78747,
+      "meta": {
+        "o": "CYYZ",
+        "d": "RDU"
+      },
+      "tailNum": "N847G",
+      "date": "2013-12-10 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 40.77725,
+      "dlng": -73.87261,
+      "meta": {
+        "o": "RDU",
+        "d": "LGA"
+      },
+      "tailNum": "N847G",
+      "date": "2013-12-20 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 40.77725,
+      "dlng": -73.87261,
+      "meta": {
+        "o": "RDU",
+        "d": "LGA"
+      },
+      "tailNum": "N847G",
+      "date": "2014-03-25 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 40.77725,
+      "olng": -73.87261,
+      "dlat": 43.6772,
+      "dlng": -79.6306,
+      "meta": {
+        "o": "LGA",
+        "d": "CYYZ"
+      },
+      "tailNum": "N847G",
+      "date": "2014-03-25 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.6772,
+      "olng": -79.6306,
+      "dlat": 40.77725,
+      "dlng": -73.87261,
+      "meta": {
+        "o": "CYYZ",
+        "d": "LGA"
+      },
+      "tailNum": "N847G",
+      "date": "2014-03-25 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 35.87764,
+      "olng": -78.78747,
+      "dlat": 43.1736,
+      "dlng": -79.935,
+      "meta": {
+        "o": "RDU",
+        "d": "CYHM"
+      },
+      "tailNum": "N847G",
+      "date": "2014-11-05 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 43.1736,
+      "olng": -79.935,
+      "dlat": 42.36294,
+      "dlng": -71.00639,
+      "meta": {
+        "o": "CYHM",
+        "d": "BOS"
+      },
+      "tailNum": "N847G",
+      "date": "2014-11-06 00:00:00",
+      "source_file": "intl.xlsx",
+      "source_sheet": "Sheet1"
+    },
+    {
+      "olat": 36.04973,
+      "olng": -79.47301,
       "dlat": 35.6,
       "dlng": -79.1,
       "meta": {

@@ -1,0 +1,31 @@
+{
+  "version": 8,
+  "name": "Voyager Raster",
+  "metadata": {
+    "maputnik:renderer": "mbgljs"
+  },
+  "sources": {
+    "carto-voyager": {
+      "type": "raster",
+      "tiles": [
+        "https://a.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+        "https://b.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+        "https://c.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png",
+        "https://d.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png"
+      ],
+      "tileSize": 256,
+      "attribution": "&copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors &copy; <a href=\"https://carto.com/attributions\">CARTO</a>",
+      "minzoom": 0,
+      "maxzoom": 18
+    }
+  },
+  "layers": [
+    {
+      "id": "carto-voyager-layer",
+      "type": "raster",
+      "source": "carto-voyager",
+      "minzoom": 0,
+      "maxzoom": 22
+    }
+  ]
+}
