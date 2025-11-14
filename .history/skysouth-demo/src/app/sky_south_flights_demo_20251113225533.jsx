@@ -13,7 +13,7 @@ const BASEMAP_STYLE = "/styles/satellite.json";
 
 export default function SkySouthFlightsDemo() {
 
-  // State variables
+  // 
   const [allFlights, setAllFlights] = useState([]);
   const [dots, setDots] = useState([]);
   const [hoveredAirport, setHoveredAirport] = useState(null);
@@ -29,8 +29,6 @@ export default function SkySouthFlightsDemo() {
   // Cycle title
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [titleVisible, setTitleVisible] = useState(true);
-
-  // Mobile check
   const [isMobile, setIsMobile] = useState(false);
 
   const titles = ["22,000+ Flights", "300+ Airports", "22 Years", "1000+ Organs Transported"];
@@ -112,7 +110,7 @@ export default function SkySouthFlightsDemo() {
     loadAllFlights();
   }, []);
 
-  // Update display date based on current flight
+  // Update display date based on current flight (only during showing phase)
   useEffect(() => {
     if (animationPhase !== 'showing') return;
 
@@ -157,15 +155,15 @@ export default function SkySouthFlightsDemo() {
 
         return { month: newMonth, year: newYear };
       });
-    }, 1000);
+    }, 100); // Same speed as animation
 
     return () => clearInterval(interval);
   }, [animationPhase, playing, allFlights]);
 
   // Cycling title animation
   useEffect(() => {
-    const cycleDuration = 6000;
-    const fadeOutDuration = 1000;
+    const cycleDuration = 6000; // 3 seconds per title
+    const fadeOutDuration = 1000; // 0.5 seconds fade out
 
     const interval = setInterval(() => {
       // Fade out current title
@@ -184,6 +182,7 @@ export default function SkySouthFlightsDemo() {
   // Auto-play when flights finish loading and buttons are visible
   const hasAutoStarted = useRef(false);
   const buttonContainerRef = useRef(null);
+
   useEffect(() => {
     if (!loading && allFlights.length > 0 && !hasAutoStarted.current) {
       // Check if the play/reset buttons are in viewport
@@ -241,7 +240,6 @@ export default function SkySouthFlightsDemo() {
 
             setDots((prevDots) => {
               const newDots = [...prevDots];
-              // Add dots to each end of arc if they dont exist yet
               if (!prevDots.some(dot => dot.position[0] === appearingArc.olng && dot.position[1] === appearingArc.olat)) {
                 newDots.push({
                   position: [appearingArc.olng, appearingArc.olat],
@@ -265,6 +263,7 @@ export default function SkySouthFlightsDemo() {
 
         // PHASE 2: REMOVING - Remove the oldest arc from the sliding window (150 arcs remain at end of phase 1)
         if (animationPhase === 'removing') {
+          // Dots are already present from when arcs appeared, no need to add them
           // Move the index forward to shrink the window from the left
           const newIndex = prevIndex + 1;
 
@@ -291,7 +290,7 @@ export default function SkySouthFlightsDemo() {
     return () => clearInterval(id);
   }, [playing, allFlights, animationPhase]);
 
-  // Get the current window of 150 arcs
+  // Get the current window of 150 arcs (phase-aware)
   const visibleArcs = useMemo(() => {
     if (allFlights.length === 0) return [];
 
@@ -314,7 +313,6 @@ export default function SkySouthFlightsDemo() {
     return [];
   }, [allFlights, currentIndex, animationPhase]);
 
-  // ArcLayer with visible arcs
   const arcLayer = new ArcLayer({
     id: 'arc-layer',
     data: visibleArcs,
@@ -327,7 +325,6 @@ export default function SkySouthFlightsDemo() {
     getWidth: 2,
   });
 
-  // Dots Layer with visible dots
   const dotsLayer = new ScatterplotLayer({
     id: 'dots-layer',
     data: dots,

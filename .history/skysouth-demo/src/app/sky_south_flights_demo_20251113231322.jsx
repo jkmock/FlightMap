@@ -13,7 +13,7 @@ const BASEMAP_STYLE = "/styles/satellite.json";
 
 export default function SkySouthFlightsDemo() {
 
-  // State variables
+  // 
   const [allFlights, setAllFlights] = useState([]);
   const [dots, setDots] = useState([]);
   const [hoveredAirport, setHoveredAirport] = useState(null);
@@ -29,8 +29,6 @@ export default function SkySouthFlightsDemo() {
   // Cycle title
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [titleVisible, setTitleVisible] = useState(true);
-
-  // Mobile check
   const [isMobile, setIsMobile] = useState(false);
 
   const titles = ["22,000+ Flights", "300+ Airports", "22 Years", "1000+ Organs Transported"];
@@ -112,7 +110,7 @@ export default function SkySouthFlightsDemo() {
     loadAllFlights();
   }, []);
 
-  // Update display date based on current flight
+  // Update display date based on current flight (only during showing phase)
   useEffect(() => {
     if (animationPhase !== 'showing') return;
 

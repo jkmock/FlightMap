@@ -13,29 +13,35 @@ const BASEMAP_STYLE = "/styles/satellite.json";
 
 export default function SkySouthFlightsDemo() {
 
-  // State variables
+  // 
   const [allFlights, setAllFlights] = useState([]);
   const [dots, setDots] = useState([]);
   const [hoveredAirport, setHoveredAirport] = useState(null);
-  const [displayDate, setDisplayDate] = useState(null);
+  const [displayDate, setDisplayDate] = useState({ month: 1, year: 2020 });
 
   // Animation phases
   const [playing, setPlaying] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [mapActivated, setMapActivated] = useState(false);
   const [animationPhase, setAnimationPhase] = useState('showing'); // 'showing', 'removing', 'dots-only'
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  // 
+  const [mapActivated, setMapActivated] = useState(false);
+  const [hasEverActivated, setHasEverActivated] = useState(false);
 
   // Cycle title
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [titleVisible, setTitleVisible] = useState(true);
-
-  // Mobile check
   const [isMobile, setIsMobile] = useState(false);
 
-  const titles = ["22,000+ Flights", "300+ Airports", "22 Years", "1000+ Organs Transported"];
+  const titles = [
+    "22,000+ Flights",
+    "300+ Airports",
+    "22 Years",
+    "1000+ Organs Transported"
+  ];
 
-  // Detect mobile
+  // Detect mobile device
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -43,6 +49,15 @@ export default function SkySouthFlightsDemo() {
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Cleanup airport tooltip timeout
+  useEffect(() => {
+    return () => {
+      if (airportTooltipTimeout.current) {
+        clearTimeout(airportTooltipTimeout.current);
+      }
+    };
   }, []);
 
   // Load all flights at startup
@@ -55,6 +70,8 @@ export default function SkySouthFlightsDemo() {
         // Try to load year-month format files first (new format)
         const years = [2020, 2021, 2022, 2023, 2024, 2025]; // Add more years as needed
         const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+        let filesFound = 0;
 
         for (const year of years) {
           for (const month of months) {
@@ -74,6 +91,7 @@ export default function SkySouthFlightsDemo() {
                   timeKey: `${year}-${monthStr}`
                 }));
                 allFlightData.push(...flightsWithMetadata);
+                filesFound++;
                 console.log(`Loaded ${data.flights.length} flights from ${filename}`);
               }
             } catch (fileErr) {
@@ -81,6 +99,36 @@ export default function SkySouthFlightsDemo() {
             }
           }
         }
+
+        // Fallback: if no year-month files found, try old format
+        if (filesFound === 0) {
+          console.log('No year-month files found, trying old format...');
+          for (let i = 1; i <= 12; i++) {
+            const month = String(i).padStart(2, '0');
+            const filename = `flights_m${month}.json`;
+            const url = `/data/flights/${filename}`;
+
+            try {
+              const response = await fetch(url);
+              if (response.ok) {
+                const data = await response.json();
+                const flightsWithMetadata = data.flights.map(flight => ({
+                  ...flight,
+                  month: i,
+                  year: 2025, // Default year for old format
+                  timeKey: `m${month}`
+                }));
+                allFlightData.push(...flightsWithMetadata);
+                filesFound++;
+                console.log(`Loaded ${data.flights.length} flights from ${filename}`);
+              }
+            } catch (fileErr) {
+              // File doesn't exist, continue
+            }
+          }
+        }
+
+        console.log(`Total flights loaded: ${allFlightData.length} from ${filesFound} files`);
 
         // Deduplicate flights based on route (origin and destination only)
         const uniqueFlights = [];
@@ -95,6 +143,7 @@ export default function SkySouthFlightsDemo() {
           }
         }
 
+        console.log(`Unique routes after deduplication: ${uniqueFlights.length} (removed ${allFlightData.length - uniqueFlights.length} duplicate routes)`);
         setAllFlights(uniqueFlights);
 
         // Initialize display date to first flight's date
@@ -112,9 +161,9 @@ export default function SkySouthFlightsDemo() {
     loadAllFlights();
   }, []);
 
-  // Update display date based on current flight
+  // Update display date based on current flight (only during showing phase)
   useEffect(() => {
-    if (animationPhase !== 'showing') return;
+    if (allFlights.length === 0 || animationPhase !== 'showing') return;
 
     const flightIndex = Math.min(currentIndex, allFlights.length - 1);
     const currentFlight = allFlights[flightIndex];
@@ -135,7 +184,7 @@ export default function SkySouthFlightsDemo() {
     }
 
     const now = new Date();
-    const currentMonth = now.getMonth() + 1;
+    const currentMonth = now.getMonth() + 1; // 1-12
     const currentYear = now.getFullYear();
 
     const interval = setInterval(() => {
@@ -157,15 +206,15 @@ export default function SkySouthFlightsDemo() {
 
         return { month: newMonth, year: newYear };
       });
-    }, 1000);
+    }, 15); // Same speed as animation
 
     return () => clearInterval(interval);
   }, [animationPhase, playing, allFlights]);
 
   // Cycling title animation
   useEffect(() => {
-    const cycleDuration = 6000;
-    const fadeOutDuration = 1000;
+    const cycleDuration = 6000; // 3 seconds per title
+    const fadeOutDuration = 1000; // 0.5 seconds fade out
 
     const interval = setInterval(() => {
       // Fade out current title
@@ -184,6 +233,8 @@ export default function SkySouthFlightsDemo() {
   // Auto-play when flights finish loading and buttons are visible
   const hasAutoStarted = useRef(false);
   const buttonContainerRef = useRef(null);
+  const airportTooltipTimeout = useRef(null);
+
   useEffect(() => {
     if (!loading && allFlights.length > 0 && !hasAutoStarted.current) {
       // Check if the play/reset buttons are in viewport
@@ -241,7 +292,6 @@ export default function SkySouthFlightsDemo() {
 
             setDots((prevDots) => {
               const newDots = [...prevDots];
-              // Add dots to each end of arc if they dont exist yet
               if (!prevDots.some(dot => dot.position[0] === appearingArc.olng && dot.position[1] === appearingArc.olat)) {
                 newDots.push({
                   position: [appearingArc.olng, appearingArc.olat],
@@ -265,6 +315,7 @@ export default function SkySouthFlightsDemo() {
 
         // PHASE 2: REMOVING - Remove the oldest arc from the sliding window (150 arcs remain at end of phase 1)
         if (animationPhase === 'removing') {
+          // Dots are already present from when arcs appeared, no need to add them
           // Move the index forward to shrink the window from the left
           const newIndex = prevIndex + 1;
 
@@ -291,7 +342,7 @@ export default function SkySouthFlightsDemo() {
     return () => clearInterval(id);
   }, [playing, allFlights, animationPhase]);
 
-  // Get the current window of 150 arcs
+  // Get the current window of 150 arcs (phase-aware)
   const visibleArcs = useMemo(() => {
     if (allFlights.length === 0) return [];
 
@@ -314,7 +365,6 @@ export default function SkySouthFlightsDemo() {
     return [];
   }, [allFlights, currentIndex, animationPhase]);
 
-  // ArcLayer with visible arcs
   const arcLayer = new ArcLayer({
     id: 'arc-layer',
     data: visibleArcs,
@@ -327,7 +377,6 @@ export default function SkySouthFlightsDemo() {
     getWidth: 2,
   });
 
-  // Dots Layer with visible dots
   const dotsLayer = new ScatterplotLayer({
     id: 'dots-layer',
     data: dots,
@@ -337,6 +386,12 @@ export default function SkySouthFlightsDemo() {
     radiusUnits: 'meters',
     pickable: true,
     onHover: info => {
+      // Clear any existing timeout
+      if (airportTooltipTimeout.current) {
+        clearTimeout(airportTooltipTimeout.current);
+        airportTooltipTimeout.current = null;
+      }
+
       if (info.object) {
         setHoveredAirport({
           code: info.object.code,
@@ -344,6 +399,12 @@ export default function SkySouthFlightsDemo() {
           y: info.y
         });
 
+        // On mobile, automatically hide after 3 seconds
+        if (isMobile) {
+          airportTooltipTimeout.current = setTimeout(() => {
+            setHoveredAirport(null);
+          }, 3000);
+        }
       } else {
         setHoveredAirport(null);
       }
@@ -359,7 +420,7 @@ export default function SkySouthFlightsDemo() {
       zoom: isMobile ? 4 : 4.05,
       pitch: 40,
       bearing: 0
-    }), 
+    }),
     [isMobile]
   );
 
@@ -389,25 +450,34 @@ export default function SkySouthFlightsDemo() {
       >
         <DeckGL
           initialViewState={initialViewState}
-          style={{ width: '100%', height: '100%' }}
           controller={
             mapActivated ? true : { scrollZoom: false }
           }
           layers={layers}
           onClick={() => {
             // On desktop, clicking anywhere activates map
+            // On mobile, only the explore button activates it
             if (!isMobile) {
               setMapActivated(true);
             }
           }}
           onViewStateChange={({ interactionState }) => {
             // On mobile, hide airport tooltip when map is moved or zoomed
-            if (isMobile) {
-              setHoveredAirport(null)
-            } else if (!isMobile && interactionState?.isDragging) {
+            if (isMobile && (interactionState?.isDragging || interactionState?.isZooming || interactionState?.isPanning)) {
+              if (airportTooltipTimeout.current) {
+                clearTimeout(airportTooltipTimeout.current);
+                airportTooltipTimeout.current = null;
+              }
+              setHoveredAirport(null);
+            }
+
+            // If user tries to interact with map and hasn't activated yet, enable exploring
+            // Only on desktop - mobile requires clicking explore button
+            if (!isMobile && interactionState?.isDragging) {
               setMapActivated(true);
             }
           }}
+          style={{ width: '100%', height: '100%' }}
         >
           <Map
             mapLib={maplibregl}
@@ -418,7 +488,47 @@ export default function SkySouthFlightsDemo() {
         </DeckGL>
       </div>
 
-      {/* Animation Controls and Explore */}
+      {/* Click to zoom overlay - hidden but functionality remains */}
+
+      {/* Cycling Title Overlay */}
+      <div className="absolute top-12 md:top-24 left-12 md:left-24 pointer-events-none z-20 max-w-[60%] md:max-w-none">
+        <h1
+          className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl transition-opacity duration-500 leading-tight"
+          style={{
+            opacity: titleVisible ? 1 : 0,
+          }}
+        >
+          {titles[currentTitleIndex]}
+        </h1>
+      </div>
+
+      {/* Airport Code Tooltip */}
+      {hoveredAirport && hoveredAirport.code && (
+        <div
+          className="absolute pointer-events-none z-30 text-white px-3 py-2 text-xl font-medium"
+          style={{
+            left: hoveredAirport.x,
+            top: hoveredAirport.y - 45,
+            transform: 'translateX(-50%)'
+          }}
+        >
+          {hoveredAirport.code}
+        </div>
+      )}
+
+      {/* Loading indicator */}
+      {loading && (
+        <div className="absolute inset-0 flex items-center justify-center z-30 bg-black/50">
+          <div className="text-white text-xl">Loading flights...</div>
+        </div>
+      )}
+
+      {/* Month and Year - Bottom Left on desktop, centered at bottom on mobile */}
+      <div className="absolute bottom-4 md:bottom-10 left-1/2 md:left-24 -translate-x-1/2 md:translate-x-0 text-white text-lg md:text-2xl font-medium pointer-events-none">
+        {formatDate(displayDate)}
+      </div>
+
+      {/* Animation Controls and Explore - Bottom Center */}
       <div ref={buttonContainerRef} className="absolute bottom-16 md:bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-4 md:space-x-6 z-10"
         style={{
           pointerEvents: 'auto'
@@ -485,44 +595,6 @@ export default function SkySouthFlightsDemo() {
             </>
           )}
         </div>
-      </div>
-
-      {/* Cycling Title Overlay */}
-      <div className="absolute top-12 md:top-24 left-12 md:left-24 pointer-events-none z-20 max-w-[60%] md:max-w-none">
-        <h1
-          className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl transition-opacity duration-500 leading-tight"
-          style={{
-            opacity: titleVisible ? 1 : 0,
-          }}
-        >
-          {titles[currentTitleIndex]}
-        </h1>
-      </div>
-
-      {/* Airport Code Tooltip */}
-      {hoveredAirport && hoveredAirport.code && (
-        <div
-          className="absolute pointer-events-none z-30 text-white px-3 py-2 text-xl font-medium"
-          style={{
-            left: hoveredAirport.x,
-            top: hoveredAirport.y - 45,
-            transform: 'translateX(-50%)'
-          }}
-        >
-          {hoveredAirport.code}
-        </div>
-      )}
-
-      {/* Loading indicator */}
-      {loading && (
-        <div className="absolute inset-0 flex items-center justify-center z-30 bg-black/50">
-          <div className="text-white text-xl">Loading flights...</div>
-        </div>
-      )}
-
-      {/* Month and Year */}
-      <div className="absolute bottom-4 md:bottom-10 left-1/2 md:left-24 -translate-x-1/2 md:translate-x-0 text-white text-lg md:text-2xl font-medium pointer-events-none">
-        {formatDate(displayDate)}
       </div>
     </div>
   );

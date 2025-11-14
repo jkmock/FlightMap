@@ -1,4 +1,3 @@
-// SkySouthFlightsDemo.jsx (pure JSX)
 // Dependencies: deck.gl, @deck.gl/layers, @deck.gl/geo-layers, react-map-gl, maplibre-gl
 
 'use client';
@@ -8,37 +7,33 @@ import DeckGL from "deck.gl";
 import { Map } from "react-map-gl/maplibre";
 import maplibregl from "maplibre-gl";
 import { ArcLayer, ScatterplotLayer } from "@deck.gl/layers";
-import { COORDINATE_SYSTEM } from "@deck.gl/core";
 
-// Tokenless light basemap
-const BASEMAP_STYLE = "/styles/saturated.json";
+// Basemap JSON file
+const BASEMAP_STYLE = "/styles/satellite.json";
 
 export default function SkySouthFlightsDemo() {
+
+  // 
   const [allFlights, setAllFlights] = useState([]);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [playing, setPlaying] = useState(false);
-  const [direction, setDirection] = useState(1); // 1 for forward, -1 for backward
   const [dots, setDots] = useState([]);
-  const [dotPositions, setDotPositions] = useState(new Set()); // Track unique dot positions
-  const [mapActivated, setMapActivated] = useState(false);
-  const [hasEverActivated, setHasEverActivated] = useState(false);
+  const [hoveredAirport, setHoveredAirport] = useState(null);
+  const [displayDate, setDisplayDate] = useState(null);
+
+  // Animation phases
+  const [playing, setPlaying] = useState(false);
   const [loading, setLoading] = useState(true);
-  const [showArcs, setShowArcs] = useState(true);
+  const [mapActivated, setMapActivated] = useState(false);
   const [animationPhase, setAnimationPhase] = useState('showing'); // 'showing', 'removing', 'dots-only'
-  const [uniqueAirports, setUniqueAirports] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Cycle title
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [titleVisible, setTitleVisible] = useState(true);
-  const [hoveredAirport, setHoveredAirport] = useState(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  const titles = [
-    "22,000 Flights",
-    "310 Airports",
-    "22 Years",
-    "500 organs transported"
-  ];
+  const titles = ["22,000+ Flights", "300+ Airports", "22 Years", "1000+ Organs Transported"];
 
-  // Detect mobile device
+  // Detect mobile
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -59,8 +54,6 @@ export default function SkySouthFlightsDemo() {
         const years = [2020, 2021, 2022, 2023, 2024, 2025]; // Add more years as needed
         const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
-        let filesFound = 0;
-
         for (const year of years) {
           for (const month of months) {
             const monthStr = String(month).padStart(2, '0');
@@ -79,7 +72,6 @@ export default function SkySouthFlightsDemo() {
                   timeKey: `${year}-${monthStr}`
                 }));
                 allFlightData.push(...flightsWithMetadata);
-                filesFound++;
                 console.log(`Loaded ${data.flights.length} flights from ${filename}`);
               }
             } catch (fileErr) {
@@ -87,36 +79,6 @@ export default function SkySouthFlightsDemo() {
             }
           }
         }
-
-        // Fallback: if no year-month files found, try old format
-        if (filesFound === 0) {
-          console.log('No year-month files found, trying old format...');
-          for (let i = 1; i <= 12; i++) {
-            const month = String(i).padStart(2, '0');
-            const filename = `flights_m${month}.json`;
-            const url = `/data/flights/${filename}`;
-
-            try {
-              const response = await fetch(url);
-              if (response.ok) {
-                const data = await response.json();
-                const flightsWithMetadata = data.flights.map(flight => ({
-                  ...flight,
-                  month: i,
-                  year: 2025, // Default year for old format
-                  timeKey: `m${month}`
-                }));
-                allFlightData.push(...flightsWithMetadata);
-                filesFound++;
-                console.log(`Loaded ${data.flights.length} flights from ${filename}`);
-              }
-            } catch (fileErr) {
-              // File doesn't exist, continue
-            }
-          }
-        }
-
-        console.log(`Total flights loaded: ${allFlightData.length} from ${filesFound} files`);
 
         // Deduplicate flights based on route (origin and destination only)
         const uniqueFlights = [];
@@ -131,8 +93,13 @@ export default function SkySouthFlightsDemo() {
           }
         }
 
-        console.log(`Unique routes after deduplication: ${uniqueFlights.length} (removed ${allFlightData.length - uniqueFlights.length} duplicate routes)`);
         setAllFlights(uniqueFlights);
+
+        // Initialize display date to first flight's date
+        if (uniqueFlights.length > 0) {
+          setDisplayDate({ month: uniqueFlights[0].month, year: uniqueFlights[0].year });
+        }
+
         setLoading(false);
       } catch (err) {
         console.error('Failed to load flights data', err);
@@ -143,22 +110,60 @@ export default function SkySouthFlightsDemo() {
     loadAllFlights();
   }, []);
 
-  // Calculate unique airports when flights are loaded
+  // Update display date based on current flight (only during showing phase)
   useEffect(() => {
-    if (allFlights.length > 0) {
-      const airportSet = new Set();
-      allFlights.forEach(flight => {
-        airportSet.add(`${flight.olng},${flight.olat}`);
-        airportSet.add(`${flight.dlng},${flight.dlat}`);
-      });
-      setUniqueAirports(airportSet.size);
+    if (animationPhase !== 'showing') return;
+
+    const flightIndex = Math.min(currentIndex, allFlights.length - 1);
+    const currentFlight = allFlights[flightIndex];
+
+    if (currentFlight) {
+      setDisplayDate({ month: currentFlight.month, year: currentFlight.year });
     }
-  }, [allFlights]);
+  }, [currentIndex, allFlights, animationPhase]);
+
+  // Continue incrementing date after flights end until current month/year
+  useEffect(() => {
+    if (animationPhase !== 'removing' || !playing || allFlights.length === 0) return;
+
+    // Set to last flight's date when entering removing phase
+    const lastFlight = allFlights[allFlights.length - 1];
+    if (lastFlight) {
+      setDisplayDate({ month: lastFlight.month, year: lastFlight.year });
+    }
+
+    const now = new Date();
+    const currentMonth = now.getMonth() + 1;
+    const currentYear = now.getFullYear();
+
+    const interval = setInterval(() => {
+      setDisplayDate(prevDate => {
+        // Check if we've reached current month/year
+        if (prevDate.year > currentYear ||
+            (prevDate.year === currentYear && prevDate.month >= currentMonth)) {
+          return prevDate; // Stop incrementing
+        }
+
+        // Increment month
+        let newMonth = prevDate.month + 1;
+        let newYear = prevDate.year;
+
+        if (newMonth > 12) {
+          newMonth = 1;
+          newYear += 1;
+        }
+
+        return { month: newMonth, year: newYear };
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [animationPhase, playing, allFlights]);
 
   // Cycling title animation
   useEffect(() => {
-    const cycleDuration = 6000; // 3 seconds per title
-    const fadeOutDuration = 1000; // 0.5 seconds fade out
+    const cycleDuration = 6000;
+    const fadeOutDuration = 1000;
 
     const interval = setInterval(() => {
       // Fade out current title
@@ -177,7 +182,6 @@ export default function SkySouthFlightsDemo() {
   // Auto-play when flights finish loading and buttons are visible
   const hasAutoStarted = useRef(false);
   const buttonContainerRef = useRef(null);
-
   useEffect(() => {
     if (!loading && allFlights.length > 0 && !hasAutoStarted.current) {
       // Check if the play/reset buttons are in viewport
@@ -211,7 +215,7 @@ export default function SkySouthFlightsDemo() {
 
     const id = setInterval(() => {
       setCurrentIndex((prevIndex) => {
-        const newIndex = prevIndex + direction;
+        const newIndex = prevIndex + 1;
 
         // PHASE 1: SHOWING - Forward progression showing all flights
         if (animationPhase === 'showing') {
@@ -227,18 +231,11 @@ export default function SkySouthFlightsDemo() {
           }
 
           // Add dots when arcs appear (going forward)
-          if (direction > 0 && newIndex >= 0 && newIndex < allFlights.length) {
+          if (newIndex >= 0 && newIndex < allFlights.length) {
             const appearingArc = allFlights[newIndex];
 
             const originKey = `${appearingArc.olng},${appearingArc.olat}`;
             const destKey = `${appearingArc.dlng},${appearingArc.dlat}`;
-
-            setDotPositions((prevPositions) => {
-              const newPositions = new Set(prevPositions);
-              newPositions.add(originKey);
-              newPositions.add(destKey);
-              return newPositions;
-            });
 
             setDots((prevDots) => {
               const newDots = [...prevDots];
@@ -257,32 +254,6 @@ export default function SkySouthFlightsDemo() {
                 });
               }
               return newDots;
-            });
-          }
-
-          // Remove dots when going backward
-          if (direction < 0 && newIndex >= 0) {
-            // Remove dots that are no longer needed based on visible arcs
-            setDots((prevDots) => {
-              const visibleAirports = new Set();
-              // Get all airports from currently visible arcs
-              for (let i = Math.max(0, newIndex - 149); i <= newIndex && i < allFlights.length; i++) {
-                const arc = allFlights[i];
-                visibleAirports.add(`${arc.olng},${arc.olat}`);
-                visibleAirports.add(`${arc.dlng},${arc.dlat}`);
-              }
-              // Keep only dots that are in visible airports
-              return prevDots.filter(dot => visibleAirports.has(dot.id));
-            });
-
-            setDotPositions((prevPositions) => {
-              const newPositions = new Set();
-              for (let i = Math.max(0, newIndex - 149); i <= newIndex && i < allFlights.length; i++) {
-                const arc = allFlights[i];
-                newPositions.add(`${arc.olng},${arc.olat}`);
-                newPositions.add(`${arc.dlng},${arc.dlat}`);
-              }
-              return newPositions;
             });
           }
 
@@ -313,10 +284,10 @@ export default function SkySouthFlightsDemo() {
 
         return prevIndex;
       });
-    }, 15); // Even faster animation speed
+    }, 15);
 
     return () => clearInterval(id);
-  }, [playing, direction, allFlights, animationPhase]);
+  }, [playing, allFlights, animationPhase]);
 
   // Get the current window of 150 arcs (phase-aware)
   const visibleArcs = useMemo(() => {
@@ -348,8 +319,8 @@ export default function SkySouthFlightsDemo() {
     getTargetPosition: d => [d.dlng, d.dlat],
     getHeight: 0.2,
     greatCircle: true,
-    getSourceColor: [194, 232, 255],
-    getTargetColor: [194, 232, 255],
+    getSourceColor: [220, 235, 230],
+    getTargetColor: [220, 235, 230],
     getWidth: 2,
   });
 
@@ -368,81 +339,154 @@ export default function SkySouthFlightsDemo() {
           x: info.x,
           y: info.y
         });
+
       } else {
         setHoveredAirport(null);
       }
     }
   });
 
-  const layers = [dotsLayer, ...(showArcs ? [arcLayer] : [])];
+  const layers = [dotsLayer, arcLayer];
 
   const initialViewState = useMemo(
     () => ({
       longitude: isMobile ? -83.5 : -96,
-      latitude: isMobile ? 34.5: 36.4,
-      zoom: 4.05,
+      latitude: isMobile ? 34.5 : 36.4,
+      zoom: isMobile ? 4 : 4.05,
       pitch: 40,
-      bearing: -4
-    }),
+      bearing: 0
+    }), 
     [isMobile]
   );
 
   // Format date as "Month Year"
-  const formatDate = (flight) => {
-    if (!flight) return 'Loading...';
+  const formatDate = (dateObj) => {
+    if (!dateObj || !dateObj.month || !dateObj.year) return 'Loading...';
     const monthNames = ['January', 'February', 'March', 'April', 'May', 'June',
       'July', 'August', 'September', 'October', 'November', 'December'];
-    const monthIndex = (flight.month || 1) - 1;
-    return `${monthNames[monthIndex]} ${flight.year}`;
+    const monthIndex = (dateObj.month || 1) - 1;
+    return `${monthNames[monthIndex]} ${dateObj.year}`;
   };
 
   return (
-    <div className="relative w-full h-[90vh] bg-black">
+    <div className="relative w-full bg-black" style={{ height: '100vh', width: '100vw' }}>
       {/* Map & DeckGL */}
       <div
         style={{
           pointerEvents: (isMobile && !mapActivated) ? 'none' : 'auto',
           width: '100%',
-          height: '100%'
+          height: '100%',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0
         }}
       >
         <DeckGL
           initialViewState={initialViewState}
+          style={{ width: '100%', height: '100%' }}
           controller={
-            isMobile
-              ? (mapActivated ? true : false)
-              : (mapActivated ? true : (hasEverActivated ? false : { scrollZoom: false }))
+            mapActivated ? true : { scrollZoom: false }
           }
           layers={layers}
           onClick={() => {
             // On desktop, clicking anywhere activates map
-            // On mobile, only the explore button activates it
             if (!isMobile) {
-              if (!hasEverActivated) {
-                setHasEverActivated(true);
-              }
               setMapActivated(true);
             }
           }}
           onViewStateChange={({ interactionState }) => {
-            // If user tries to interact with map and hasn't activated yet, enable exploring
-            // Only on desktop - mobile requires clicking explore button
-            if (!isMobile && interactionState?.isDragging && !hasEverActivated) {
-              setHasEverActivated(true);
+            // On mobile, hide airport tooltip when map is moved or zoomed
+            if (isMobile) {
+              setHoveredAirport(null)
+            } else if (!isMobile && interactionState?.isDragging) {
               setMapActivated(true);
             }
           }}
         >
-          <Map mapLib={maplibregl} mapStyle={BASEMAP_STYLE} />
+          <Map
+            mapLib={maplibregl}
+            mapStyle={BASEMAP_STYLE}
+            style={{ width: '100%', height: '100%' }}
+            attributionControl={false}
+          />
         </DeckGL>
       </div>
 
-      {/* Click to zoom overlay - hidden but functionality remains */}
+      {/* Animation Controls and Explore */}
+      <div ref={buttonContainerRef} className="absolute bottom-16 md:bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-4 md:space-x-6 z-10"
+        style={{
+          pointerEvents: 'auto'
+        }}
+      >
+        {/* Play/Pause Button */}
+        <button
+          onClick={() => setPlaying((p) => !p)}
+          className="text-white hover:text-white/70 transition-colors"
+          disabled={loading || animationPhase === 'dots-only'}
+          aria-label={playing ? "Pause" : "Play"}
+        >
+          {playing ? (
+            <svg className="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
+            </svg>
+          ) : (
+            <svg className="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M8 5v14l11-7z" />
+            </svg>
+          )}
+        </button>
+
+        {/* Reset Button */}
+        <button
+          onClick={() => {
+            setCurrentIndex(0);
+            setDots([]);
+            setAnimationPhase('showing');
+            setPlaying(true);
+            if (allFlights.length > 0) {
+              setDisplayDate({ month: allFlights[0].month, year: allFlights[0].year });
+            }
+          }}
+          className="text-white hover:text-white/70 transition-colors"
+          disabled={loading}
+          aria-label="Reset"
+        >
+          <svg className="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" />
+          </svg>
+        </button>
+
+        {/* Explore Button */}
+        <div
+          className={`text-white text-sm md:text-base font-light flex items-center cursor-pointer hover:text-white/70 transition-colors whitespace-nowrap ${mapActivated ? 'space-x-1' : 'space-x-2'}`}
+          onClick={() => {
+            setMapActivated(!mapActivated);
+          }}
+        >
+          {mapActivated ? (
+            <>
+              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              <span>Disable exploring</span>
+            </>
+          ) : (
+            <>
+              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <span>Explore</span>
+            </>
+          )}
+        </div>
+      </div>
 
       {/* Cycling Title Overlay */}
-      <div className="absolute top-12 md:top-24 left-12 md:left-24 pointer-events-none z-20">
+      <div className="absolute top-12 md:top-24 left-12 md:left-24 pointer-events-none z-20 max-w-[60%] md:max-w-none">
         <h1
-          className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-2xl transition-opacity duration-500"
+          className="text-2xl sm:text-4xl md:text-4xl lg:text-5xl font-bold text-white drop-shadow-2xl transition-opacity duration-500 leading-tight"
           style={{
             opacity: titleVisible ? 1 : 0,
           }}
@@ -472,88 +516,9 @@ export default function SkySouthFlightsDemo() {
         </div>
       )}
 
-      {/* Month and Year - Bottom Left on desktop, centered at bottom on mobile */}
+      {/* Month and Year */}
       <div className="absolute bottom-4 md:bottom-10 left-1/2 md:left-24 -translate-x-1/2 md:translate-x-0 text-white text-lg md:text-2xl font-medium pointer-events-none">
-        {formatDate(allFlights[Math.min(currentIndex, allFlights.length - 1)])}
-      </div>
-
-      {/* Animation Controls and Explore - Bottom Center */}
-      <div ref={buttonContainerRef} className="absolute bottom-16 md:bottom-10 left-1/2 -translate-x-1/2 flex items-center space-x-4 md:space-x-6 z-10"
-        style={{
-          pointerEvents: 'auto'
-        }}
-      >
-        {/* Play/Pause Button */}
-        <button
-          onClick={() => setPlaying((p) => !p)}
-          className="text-white hover:text-white/70 transition-colors"
-          disabled={loading || animationPhase === 'dots-only'}
-          aria-label={playing ? "Pause" : "Play"}
-        >
-          {playing ? (
-            <svg className="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z" />
-            </svg>
-          ) : (
-            <svg className="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M8 5v14l11-7z" />
-            </svg>
-          )}
-        </button>
-
-        {/* Reset Button */}
-        <button
-          onClick={() => {
-            setCurrentIndex(0);
-            setDots([]);
-            setDotPositions(new Set());
-            setAnimationPhase('showing');
-            setPlaying(true);
-          }}
-          className="text-white hover:text-white/70 transition-colors"
-          disabled={loading}
-          aria-label="Reset"
-        >
-          <svg className="w-8 h-8 md:w-10 md:h-10" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z" />
-          </svg>
-        </button>
-
-        {/* Explore Button */}
-        <div
-          className="text-white text-sm md:text-base font-light flex items-center space-x-2 cursor-pointer hover:text-white/70 transition-colors whitespace-nowrap"
-          onClick={() => {
-            if (!hasEverActivated) {
-              setHasEverActivated(true);
-              setMapActivated(true);
-            } else {
-              setMapActivated(!mapActivated);
-            }
-          }}
-        >
-          {!hasEverActivated ? (
-            <>
-              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <span>Explore</span>
-            </>
-          ) : mapActivated ? (
-            <>
-              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-              <span>Disable exploring</span>
-            </>
-          ) : (
-            <>
-              <svg className="w-8 h-8 md:w-10 md:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-              <span>Explore</span>
-            </>
-          )}
-        </div>
+        {formatDate(displayDate)}
       </div>
     </div>
   );

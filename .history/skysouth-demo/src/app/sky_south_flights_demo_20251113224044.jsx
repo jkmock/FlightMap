@@ -13,11 +13,11 @@ const BASEMAP_STYLE = "/styles/satellite.json";
 
 export default function SkySouthFlightsDemo() {
 
-  // State variables
+  // 
   const [allFlights, setAllFlights] = useState([]);
   const [dots, setDots] = useState([]);
   const [hoveredAirport, setHoveredAirport] = useState(null);
-  const [displayDate, setDisplayDate] = useState(null);
+  const [displayDate, setDisplayDate] = useState({ month: 1, year: 2020 });
 
   // Animation phases
   const [playing, setPlaying] = useState(false);
@@ -29,13 +29,16 @@ export default function SkySouthFlightsDemo() {
   // Cycle title
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);
   const [titleVisible, setTitleVisible] = useState(true);
-
-  // Mobile check
   const [isMobile, setIsMobile] = useState(false);
 
-  const titles = ["22,000+ Flights", "300+ Airports", "22 Years", "1000+ Organs Transported"];
+  const titles = [
+    "22,000+ Flights",
+    "300+ Airports",
+    "22 Years",
+    "1000+ Organs Transported"
+  ];
 
-  // Detect mobile
+  // Detect mobile device
   useEffect(() => {
     const checkMobile = () => {
       setIsMobile(window.innerWidth < 768);
@@ -43,6 +46,15 @@ export default function SkySouthFlightsDemo() {
     checkMobile();
     window.addEventListener('resize', checkMobile);
     return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  // Cleanup airport tooltip timeout
+  useEffect(() => {
+    return () => {
+      if (airportTooltipTimeout.current) {
+        clearTimeout(airportTooltipTimeout.current);
+      }
+    };
   }, []);
 
   // Load all flights at startup
@@ -55,6 +67,8 @@ export default function SkySouthFlightsDemo() {
         // Try to load year-month format files first (new format)
         const years = [2020, 2021, 2022, 2023, 2024, 2025]; // Add more years as needed
         const months = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+
+        let filesFound = 0;
 
         for (const year of years) {
           for (const month of months) {
@@ -74,6 +88,7 @@ export default function SkySouthFlightsDemo() {
                   timeKey: `${year}-${monthStr}`
                 }));
                 allFlightData.push(...flightsWithMetadata);
+                filesFound++;
                 console.log(`Loaded ${data.flights.length} flights from ${filename}`);
               }
             } catch (fileErr) {
@@ -81,6 +96,36 @@ export default function SkySouthFlightsDemo() {
             }
           }
         }
+
+        // Fallback: if no year-month files found, try old format
+        if (filesFound === 0) {
+          console.log('No year-month files found, trying old format...');
+          for (let i = 1; i <= 12; i++) {
+            const month = String(i).padStart(2, '0');
+            const filename = `flights_m${month}.json`;
+            const url = `/data/flights/${filename}`;
+
+            try {
+              const response = await fetch(url);
+              if (response.ok) {
+                const data = await response.json();
+                const flightsWithMetadata = data.flights.map(flight => ({
+                  ...flight,
+                  month: i,
+                  year: 2025, // Default year for old format
+                  timeKey: `m${month}`
+                }));
+                allFlightData.push(...flightsWithMetadata);
+                filesFound++;
+                console.log(`Loaded ${data.flights.length} flights from ${filename}`);
+              }
+            } catch (fileErr) {
+              // File doesn't exist, continue
+            }
+          }
+        }
+
+        console.log(`Total flights loaded: ${allFlightData.length} from ${filesFound} files`);
 
         // Deduplicate flights based on route (origin and destination only)
         const uniqueFlights = [];
@@ -95,6 +140,7 @@ export default function SkySouthFlightsDemo() {
           }
         }
 
+        console.log(`Unique routes after deduplication: ${uniqueFlights.length} (removed ${allFlightData.length - uniqueFlights.length} duplicate routes)`);
         setAllFlights(uniqueFlights);
 
         // Initialize display date to first flight's date
@@ -112,9 +158,9 @@ export default function SkySouthFlightsDemo() {
     loadAllFlights();
   }, []);
 
-  // Update display date based on current flight
+  // Update display date based on current flight (only during showing phase)
   useEffect(() => {
-    if (animationPhase !== 'showing') return;
+    if (allFlights.length === 0 || animationPhase !== 'showing') return;
 
     const flightIndex = Math.min(currentIndex, allFlights.length - 1);
     const currentFlight = allFlights[flightIndex];
@@ -135,7 +181,7 @@ export default function SkySouthFlightsDemo() {
     }
 
     const now = new Date();
-    const currentMonth = now.getMonth() + 1;
+    const currentMonth = now.getMonth() + 1; // 1-12
     const currentYear = now.getFullYear();
 
     const interval = setInterval(() => {
@@ -157,15 +203,15 @@ export default function SkySouthFlightsDemo() {
 
         return { month: newMonth, year: newYear };
       });
-    }, 1000);
+    }, 15); // Same speed as animation
 
     return () => clearInterval(interval);
   }, [animationPhase, playing, allFlights]);
 
   // Cycling title animation
   useEffect(() => {
-    const cycleDuration = 6000;
-    const fadeOutDuration = 1000;
+    const cycleDuration = 6000; // 3 seconds per title
+    const fadeOutDuration = 1000; // 0.5 seconds fade out
 
     const interval = setInterval(() => {
       // Fade out current title
@@ -184,6 +230,7 @@ export default function SkySouthFlightsDemo() {
   // Auto-play when flights finish loading and buttons are visible
   const hasAutoStarted = useRef(false);
   const buttonContainerRef = useRef(null);
+
   useEffect(() => {
     if (!loading && allFlights.length > 0 && !hasAutoStarted.current) {
       // Check if the play/reset buttons are in viewport
@@ -241,7 +288,6 @@ export default function SkySouthFlightsDemo() {
 
             setDots((prevDots) => {
               const newDots = [...prevDots];
-              // Add dots to each end of arc if they dont exist yet
               if (!prevDots.some(dot => dot.position[0] === appearingArc.olng && dot.position[1] === appearingArc.olat)) {
                 newDots.push({
                   position: [appearingArc.olng, appearingArc.olat],
@@ -265,6 +311,7 @@ export default function SkySouthFlightsDemo() {
 
         // PHASE 2: REMOVING - Remove the oldest arc from the sliding window (150 arcs remain at end of phase 1)
         if (animationPhase === 'removing') {
+          // Dots are already present from when arcs appeared, no need to add them
           // Move the index forward to shrink the window from the left
           const newIndex = prevIndex + 1;
 
@@ -291,7 +338,7 @@ export default function SkySouthFlightsDemo() {
     return () => clearInterval(id);
   }, [playing, allFlights, animationPhase]);
 
-  // Get the current window of 150 arcs
+  // Get the current window of 150 arcs (phase-aware)
   const visibleArcs = useMemo(() => {
     if (allFlights.length === 0) return [];
 
@@ -314,7 +361,6 @@ export default function SkySouthFlightsDemo() {
     return [];
   }, [allFlights, currentIndex, animationPhase]);
 
-  // ArcLayer with visible arcs
   const arcLayer = new ArcLayer({
     id: 'arc-layer',
     data: visibleArcs,
@@ -327,7 +373,6 @@ export default function SkySouthFlightsDemo() {
     getWidth: 2,
   });
 
-  // Dots Layer with visible dots
   const dotsLayer = new ScatterplotLayer({
     id: 'dots-layer',
     data: dots,
