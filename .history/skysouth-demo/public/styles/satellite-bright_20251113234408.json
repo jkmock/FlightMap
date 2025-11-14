@@ -17,7 +17,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#315931"
+        "background-color": "#b8d35d"
       }
     },
     {
@@ -27,7 +27,7 @@
       "source-layer": "landcover",
       "filter": ["==", "class", "grass"],
       "paint": {
-        "fill-color": "#628560",
+        "fill-color": "#6ba85f",
         "fill-opacity": 0.8
       }
     },
@@ -38,7 +38,7 @@
       "source-layer": "landcover",
       "filter": ["==", "class", "wood"],
       "paint": {
-        "fill-color": "#40593a",
+        "fill-color": "#4d8540",
         "fill-opacity": 0.9
       }
     },
@@ -48,7 +48,7 @@
       "source": "carto",
       "source-layer": "park",
       "paint": {
-        "fill-color": "#516c48",
+        "fill-color": "#5d9851",
         "fill-opacity": 0.7
       }
     },
@@ -91,7 +91,7 @@
       "source": "carto",
       "source-layer": "water",
       "paint": {
-        "fill-color": "#254159",
+        "fill-color": "#6face6",
         "fill-opacity": 1
       }
     },

@@ -91,7 +91,7 @@
       "source": "carto",
       "source-layer": "water",
       "paint": {
-        "fill-color": "#254159",
+        "fill-color": "#1a2f3c",
         "fill-opacity": 1
       }
     },

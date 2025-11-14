@@ -1,6 +1,6 @@
 {
   "version": 8,
-  "name": "Satellite Style Bright",
+  "name": "Earthtones Style",
   "metadata": {
     "maputnik:renderer": "mbgljs"
   },
@@ -17,7 +17,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#315931"
+        "background-color": "#394831"
       }
     },
     {
@@ -27,7 +27,7 @@
       "source-layer": "landcover",
       "filter": ["==", "class", "grass"],
       "paint": {
-        "fill-color": "#628560",
+        "fill-color": "#5B7856",
         "fill-opacity": 0.8
       }
     },
@@ -38,7 +38,7 @@
       "source-layer": "landcover",
       "filter": ["==", "class", "wood"],
       "paint": {
-        "fill-color": "#40593a",
+        "fill-color": "#5B7856",
         "fill-opacity": 0.9
       }
     },
@@ -48,7 +48,7 @@
       "source": "carto",
       "source-layer": "park",
       "paint": {
-        "fill-color": "#516c48",
+        "fill-color": "#9FB49B",
         "fill-opacity": 0.7
       }
     },
@@ -59,7 +59,7 @@
       "source-layer": "landuse",
       "filter": ["==", "class", "residential"],
       "paint": {
-        "fill-color": "#323f3a",
+        "fill-color": "#4a5845",
         "fill-opacity": 0.6
       }
     },
@@ -70,7 +70,7 @@
       "source-layer": "landuse",
       "filter": ["==", "class", "commercial"],
       "paint": {
-        "fill-color": "#3d4a44",
+        "fill-color": "#495443",
         "fill-opacity": 0.5
       }
     },
@@ -81,7 +81,7 @@
       "source-layer": "landuse",
       "filter": ["==", "class", "industrial"],
       "paint": {
-        "fill-color": "#424c47",
+        "fill-color": "#525e4f",
         "fill-opacity": 0.6
       }
     },
@@ -91,7 +91,7 @@
       "source": "carto",
       "source-layer": "water",
       "paint": {
-        "fill-color": "#254159",
+        "fill-color": "#607D7E",
         "fill-opacity": 1
       }
     },
@@ -101,7 +101,7 @@
       "source": "carto",
       "source-layer": "waterway",
       "paint": {
-        "line-color": "#1a2f3c",
+        "line-color": "#607D7E",
         "line-width": {
           "stops": [
             [8, 0.5],
@@ -118,7 +118,7 @@
       "source-layer": "building",
       "minzoom": 14,
       "paint": {
-        "fill-color": "#4f5954",
+        "fill-color": "#556653",
         "fill-opacity": {
           "stops": [
             [14, 0],
@@ -135,7 +135,7 @@
       "source-layer": "building",
       "minzoom": 15,
       "paint": {
-        "line-color": "#353f3a",
+        "line-color": "#394831",
         "line-width": 0.5,
         "line-opacity": 0.6
       }
@@ -147,7 +147,7 @@
       "source-layer": "aeroway",
       "filter": ["==", "class", "runway"],
       "paint": {
-        "line-color": "#5f6862",
+        "line-color": "#6b7a69",
         "line-width": {
           "stops": [
             [11, 2],
@@ -165,7 +165,7 @@
       "filter": ["==", "class", "taxiway"],
       "minzoom": 13,
       "paint": {
-        "line-color": "#5f6862",
+        "line-color": "#6b7a69",
         "line-width": {
           "stops": [
             [13, 1],
@@ -183,7 +183,7 @@
       "filter": ["==", "class", "minor"],
       "minzoom": 13,
       "paint": {
-        "line-color": "#556158",
+        "line-color": "#687762",
         "line-width": {
           "stops": [
             [13, 1],
@@ -201,7 +201,7 @@
       "filter": ["in", "class", "secondary", "tertiary"],
       "minzoom": 11,
       "paint": {
-        "line-color": "#5f7067",
+        "line-color": "#748872",
         "line-width": {
           "stops": [
             [11, 1.5],
@@ -219,7 +219,7 @@
       "filter": ["==", "class", "primary"],
       "minzoom": 9,
       "paint": {
-        "line-color": "#697b70",
+        "line-color": "#7f9479",
         "line-width": {
           "stops": [
             [9, 1],
@@ -238,7 +238,7 @@
       "filter": ["==", "class", "trunk"],
       "minzoom": 8,
       "paint": {
-        "line-color": "#748679",
+        "line-color": "#8a9f84",
         "line-width": {
           "stops": [
             [8, 1.5],
@@ -257,7 +257,7 @@
       "filter": ["==", "class", "motorway"],
       "minzoom": 6,
       "paint": {
-        "line-color": "#7f9182",
+        "line-color": "#95ab8f",
         "line-width": {
           "stops": [
             [6, 1],
@@ -277,7 +277,7 @@
       "filter": ["all", ["==", "admin_level", 4], ["==", "maritime", 0]],
       "minzoom": 0,
       "paint": {
-        "line-color": "#869590",
+        "line-color": "#9FB49B",
         "line-width": {
           "stops": [
             [0, 0.5],
@@ -297,7 +297,7 @@
       "source-layer": "boundary",
       "filter": ["all", ["==", "admin_level", 2], ["==", "maritime", 0]],
       "paint": {
-        "line-color": "#788580",
+        "line-color": "#8a9f8a",
         "line-width": {
           "stops": [
             [3, 1],
@@ -328,7 +328,7 @@
       },
       "paint": {
         "text-color": "#d5e5dc",
-        "text-halo-color": "#1f2e28",
+        "text-halo-color": "#394831",
         "text-halo-width": 2,
         "text-opacity": 0.85
       }

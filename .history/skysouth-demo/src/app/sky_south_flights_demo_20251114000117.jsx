@@ -9,7 +9,7 @@ import maplibregl from "maplibre-gl";
 import { ArcLayer, ScatterplotLayer } from "@deck.gl/layers";
 
 // Basemap JSON file
-const BASEMAP_STYLE = "/styles/satellite-bright.json";
+const BASEMAP_STYLE = "/styles/earthtones.json";
 
 export default function SkySouthFlightsDemo() {
 
