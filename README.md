@@ -1,6 +1,10 @@
 # About
 This is an interactive 3D flight map to display over 22,000 flights across 23 years. It utilizes React, Tailwind CSS, Deck.gl, and MapLibre. This enables users to explore and interact with flight patterns dynamically. I extracted ICAO airport codes from two decades of flight logs and saved latitude and longitude values to monthly JSON flight data files. Animated flights as 3D arcs on a 3D plane from origin to destination to create an immersive user experience.
 
+# Live Demo
+
+https://skysouthmap.vercel.app/
+
 # Features
 * Toggleable exploring gives users the option to interact further with the data without interrupting website flow.
 * Hoverable airport markers let users explore previous destinations
